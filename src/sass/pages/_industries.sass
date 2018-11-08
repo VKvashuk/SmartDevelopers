@@ -1,0 +1,67 @@
+.industries
+	padding-top: 64px
+	.inner
+		+r(766)
+			padding: 0 16px
+	img
+		width: 278px
+		height: 160px
+		object-fit: cover;
+		border-radius: 8px
+		+r(950)
+			width: 320px
+		+r(466)
+			width: 343px
+		+r(373)
+			width: 276px
+	ul
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: flex-start
+		+r(1250)
+			justify-content: space-around
+	li
+		max-width: 278px
+		margin: 0 10px
+		margin-bottom: 28px
+		+r(950)
+			max-width: 320px
+		+r(466)
+			max-width: 343px
+		+r(373)
+			width: 276px
+		p
+			font-size: 16px
+			font-family: $mont-bld
+			padding-top: 16px
+
+.main-industries
+	.preview__wrapper
+		padding-bottom: 46px
+		+r(766)
+			padding-left: 16px
+	.preview__wrapper-text
+		padding-bottom: 36px
+		padding-top: 44px
+		.text-md
+			font-size: 15px
+	.news
+		background-color: $white
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: auto
+			height: 1px
+			bottom: 0
+			left: 0
+			right: 0
+			border-bottom: 1px solid $gray-bdr
+			margin: 0 48px
+			box-sizing: border-box
+			+r(1250)
+				margin: 0 16px
+		.title-semi-lg
+			margin-bottom: 40px
+

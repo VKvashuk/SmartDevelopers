@@ -1,0 +1,150 @@
+---
+title: Компания
+mainClasses: country-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!--BEGIN .preview -->
+<section class="preview" style="background-image: url('img/bg-country@2x.jpg');">
+	<div class="preview__wrapper">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="title"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/about" class="breadcrumbs__link" itemprop="item" title="О компании"><span itemprop="name">О компании</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Компания">
+					<span itemprop="name">Компания</span>
+				</span>
+				<meta itemprop="position" content="3">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<h1 class="title-lg">SmartDevelopers Ukraine</h1>
+
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg">SmartDevelopers Ukraine</h1>
+			<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<section class="progress">
+	<ul class="progress-items">
+		<li class="progress-item">
+			<p class="progress-number">54</p>
+			<h3>Lorem ipsum dolor </h3>
+			<p class="progress-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo dolor.</p>
+		</li>
+		<li class="progress-item">
+			<p class="progress-number">99</p>
+			<h3>Lorem ipsum dolor </h3>
+			<p class="progress-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo dolor.</p>
+		</li>
+		<li class="progress-item">
+			<p class="progress-number">99</p>
+			<h3>Lorem ipsum dolor </h3>
+			<p class="progress-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo dolor.</p>
+		</li>
+	</ul>
+
+	<div class="progress-wrapper">
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+				Aenean commodo ligula eget dolor. Aenean massa. Cum
+			sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+			<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. </p>
+		</div>
+		<div>
+			<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+			<p>Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. </p>
+		</div>
+	</div>
+</section>
+<!-- END .progress -->
+
+<section class="sldr">
+	<div class="sldr-wrapper js-country-slider">
+		<img src="img/country-slider-1.jpg" alt="slider-1">
+		<img src="img/country-slider-2.jpg" alt="slider-2">
+		<img src="img/country-slider-1.jpg" alt="slider-1">
+		<img src="img/country-slider-2.jpg" alt="slider-2">
+		<img src="img/country-slider-1.jpg" alt="slider-1">
+		<img src="img/country-slider-2.jpg" alt="slider-2">
+		<img src="img/country-slider-1.jpg" alt="slider-1">
+		<img src="img/country-slider-2.jpg" alt="slider-2">
+	</div>
+	<p class="sldr-number"></p>
+</section>
+<!-- END .sldr -->
+
+<div class="sldr-text">
+	<div class="inner">
+		<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+	</div>
+</div>
+<!-- END .sldr-text -->
+
+<section class="vacancy">
+	<div class="inner">
+		<div class="vacancy-title-wrapper">
+			<h2 class="title-semi-lg vacancy-title">Вакансии в Киевский офис</h2>
+			<a class="btn btn_ghost text-gray" href="#" title="СМОТРЕТЬ ВСЕ">СМОТРЕТЬ&nbsp;ВСЕ</a>
+		</div>
+
+		<ul class="vacancy-items">
+			<li class="vacancy-item">
+				<h3>Lead Front-End Developer</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient ontes, nascetur ridiculus mus.</p>
+				<a class="btn btn_primary btn_icon" href="#" title="ПОДРОБНЕЕ"><span>ПОДРОБНЕЕ</span> {{mixins.icon('arrow')}}</a>
+			</li>
+			<li class="vacancy-item">
+				<h3>Lead Front-End Developer</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient ontes, nascetur ridiculus mus.</p>
+				<a class="btn btn_primary btn_icon" href="#" title="ПОДРОБНЕЕ"><span>ПОДРОБНЕЕ</span> {{mixins.icon('arrow')}}</a>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- END .vacancy -->
+
+<section class="address">
+	<div class="inner">
+		<div class="address-wrapper">
+			<div class="address-block">
+				<h2 class="title-semi-lg address-title">Адрес и телефон</h2>
+				<a class="address-tel" href="tel:+380991234567"> +38 099 123-45-67 </a>
+				<p class="address-place">Панаса Мирного ул, 5-1 <br>Киев, Украина</p>
+				<p class="address-work">Работаем в будние дни <br>
+				с 9:00 до 18:00</p>
+				<div class="address-social">
+					<p>Поделиться:</p>
+					<span class="social__link" data-link="https://www.facebook.com/smartdevelopers" title="social icon facebook">{{mixins.icon('facebook')}}</span>
+					<span class="social__link" data-link="https://www.twitter.com/smartdevelopers" title="social icon twitter">{{mixins.icon('twitter')}}</span>
+					<span class="social__link" data-link="https://www.vk.com/smartdevelopers" title="social icon vk">{{mixins.icon('vk')}}</span>
+					<span class="social__link" data-link="https://www.linkedin.com/smartdevelopers" title="social icon linkedin">{{mixins.icon('linkedin')}}</span>
+					<span class="social__link" data-link="https://www.smartdevelopers.eu" title="social icon link">{{mixins.icon('link')}}</span>
+				</div>
+			</div>
+
+			<div class="address-map">
+				<a type="hidden" itemprop="url" href="#" target="iframeMap"></a>
+				<span itemscope itemprop="hasMap" itemtype="http://schema.org/Map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.3601130807106!2d30.542636161242125!3d50.43289607895925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf091cb203cb%3A0xf30f596f7748f61c!2z0LLRg9C70LjRhtGPINCf0LDQvdCw0YHQsCDQnNC40YDQvdC-0LPQviwgNSwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1525423733116" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen id="iframeMap"></iframe>
+					<link itemprop="mapType" href="http://schema.org/VenueMap" />
+				</span>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END .address -->
+{% include "blocks/_question.html" %}
+{% endblock %}

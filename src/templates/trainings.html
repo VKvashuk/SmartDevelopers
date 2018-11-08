@@ -1,0 +1,151 @@
+---
+title: Тренинги в Киеве
+mainClasses: trainings-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview" style="background-image: url('img/bg-preview-trainings.jpg');">
+	<div class="preview__wrapper">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/career" class="breadcrumbs__link" itemprop="item" title="Карьера"><span itemprop="name">Карьера</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Тренинги в Киеве">
+					<span itemprop="name">Тренинги в Киеве</span>
+				</span>
+				<meta itemprop="position" content="3">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text preview_small">
+			<h1 class="title-lg">Тренинги в Киеве</h1>
+			<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .opening -->
+<div class="opening">
+	<div class="inner tabs tabs_white tabs_noshadow">
+		<div class="tabs__caption-wrapper">
+			<ul class="tabs__caption">
+				<li class="tabs__item is-active"><a href="#" class="tabs__trigger"title="Все">Все</a></li>
+				<li class="tabs__item"><a href="#" class="tabs__trigger"title="UX и дизайн">UX и дизайн</a></li>
+				<li class="tabs__item"><a href="#" class="tabs__trigger"title="Продажи, маркетинг, PR">Продажи, маркетинг, PR</a></li>
+				<li class="tabs__item"><a href="#" class="tabs__trigger"title="Разработка">Разработка</a></li>
+			</ul>
+
+			<a class="count" href="#" title="12 ТРЕНИНГОВ">12 ТРЕНИНГОВ</a>
+		</div>
+
+		<div class="tabs__content is-active">
+			<div class="opening-wrapper">
+				<div class="items">
+					{% for item in range(0 ,7) %}
+					<div class="item" itemscope itemtype="http://schema.org/Event">
+						<h3 class="title-semi-md" itemprop="name">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+						<p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+
+						<div class="item__controls">
+							<div class="item__controls-link">
+								<a href="#" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" title="КПИ">КПИ</a>
+								<a href="#" itemprop="startDate" content="2018-03-18T14:00" title="18 МАРТА, 14:00">18 МАРТА, 14:00</a>
+							</div>
+
+							<a href="training.html" class="btn btn_primary" itemprop="url" title="Записаться"><span>ЗАПИСАТЬСЯ </span></a>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- END .opening-wrapper -->.
+		</div>
+		<!-- END .tab-1 -->
+
+		<div class="tabs__content">
+			<div class="opening-wrapper">
+				<div class="items">
+					{% for item in range(0 ,6) %}
+					<div class="item" itemscope itemtype="http://schema.org/Event">
+						<h3 class="title-semi-md" itemprop="name">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+						<p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+
+						<div class="item__controls">
+							<div class="item__controls-link">
+								<a href="#" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">КПИ</a>
+								<a href="#" itemprop="startDate" content="2018-03-18T14:00">18 МАРТА, 14:00</a>
+							</div>
+
+							<a href="training.html" class="btn btn_primary" itemprop="url" title="Записаться"><span>ЗАПИСАТЬСЯ </span></a>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- END .opening-wrapper -->.
+		</div>
+		<!-- END .tab-2 -->
+
+		<div class="tabs__content">
+			<div class="opening-wrapper">
+				<div class="items">
+					{% for item in range(0 ,5) %}
+					<div class="item" itemscope itemtype="http://schema.org/Event">
+						<h3 class="title-semi-md" itemprop="name">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+						<p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+
+						<div class="item__controls">
+							<div class="item__controls-link">
+								<a href="#" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">КПИ</a>
+								<a href="#" itemprop="startDate" content="2018-03-18T14:00">18 МАРТА, 14:00</a>
+							</div>
+
+							<a href="training.html" class="btn btn_primary" itemprop="url" title="Записаться"><span>ЗАПИСАТЬСЯ </span></a>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- END .opening-wrapper -->.
+		</div>
+		<!-- END .tab-3 -->
+
+		<div class="tabs__content">
+			<div class="opening-wrapper">
+				<div class="items">
+					{% for item in range(0 ,4) %}
+					<div class="item" itemscope itemtype="http://schema.org/Event">
+						<h3 class="title-semi-md" itemprop="name">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+						<p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+
+						<div class="item__controls">
+							<div class="item__controls-link">
+								<a href="#" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">КПИ</a>
+								<a href="#" itemprop="startDate" content="2018-03-18T14:00">18 МАРТА, 14:00</a>
+							</div>
+
+							<a href="training.html" class="btn btn_primary" itemprop="url" title="Записаться"><span>ЗАПИСАТЬСЯ </span></a>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- END .opening-wrapper -->
+		</div>
+		<!-- END .tab-4 -->
+	</div>
+</div>
+<!-- END .opening -->
+{% include "blocks/_question.html" %}
+{% endblock%}

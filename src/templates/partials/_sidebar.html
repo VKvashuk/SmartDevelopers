@@ -1,0 +1,98 @@
+{% include "blocks/_popup.html" %}
+<!-- BEGIN .sidebar -->
+<aside class="sidebar js-sidebar">
+	<div class="sidebar__wrapper">
+		<div class="sidebar__header">
+			<a href="#" class="logo logo_sidebar">{{mixins.imgSvg('logo')}}</a>
+			<button class="btn-close js-btn-close" type="button">{{mixins.icon('close')}}</button>
+		</div>
+
+		<div class="search" itemscope itemtype="http://schema.org/WebSite">
+			<meta itemprop="url" content="smartdevelopers.eu"/>
+			<form action="/" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+				<meta itemprop="target" content="smartdevelopers.eu/?do=search&amp;searchstring={searchstring}">
+				<input type="hidden" name="do" value="search">
+				<input type="search" placeholder="Поиск по сайту" itemprop="query-input" name="searchstring" autocomplete="off">
+				<button type="submit">{{mixins.icon('search')}}</button>
+			</form>
+		</div>
+
+		<!-- BEGIN .nav -->
+		<nav class="nav">
+			<ul class="menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<li class="menu__item" itemprop="name"><a href="#" itemprop="url" title="О компании" class="menu__link">О компании {{mixins.icon('caret')}}</a></li>
+				<li class="menu__item" itemprop="name"><a href="#" itemprop="url" title="Решения" class="menu__link js-nav-link" data-target="menu2">Решения {{mixins.icon('caret')}}</a></li>
+				<li class="menu__item" itemprop="name"><a href="#" itemprop="url" title="Отрасли" class="menu__link">Отрасли {{mixins.icon('caret')}}</a></li>
+				<li class="menu__item" itemprop="name"><a href="#" itemprop="url" title="Идеи и проекты" class="menu__link js-nav-link" data-target="menu4">Идеи и проекты {{mixins.icon('caret')}}</a></li>
+				<li class="menu__item" itemprop="name"><a href="#" itemprop="url" title="Карьера" class="menu__link js-nav-link" data-target="menu5">Карьера {{mixins.icon('caret')}}</a></li>
+				<li class="menu__item" itemprop="name"><a href="#" itemprop="url" title="Контакты" class="menu__link js-nav-link" data-target="menu6">Контакты {{mixins.icon('caret')}}</a></li>
+			</ul>
+		</nav>
+		<!-- END .nav -->
+
+		<a href="#" class="btn btn_ghost btn_icon js-popup-control" data-popup="sidebar" title="НАПИСАТЬ"><div>НАПИСАТЬ</div> {{mixins.icon('send')}}</a>
+
+		<ul class="list-lang">
+			<li><a href="#" title="RU" itemprop="availableLanguage" itemscope itemtype="http://schema.org/Language" class="is-current"><span itemprop="name">RU</span></a></li>
+			<li><a href="#" title="EN" itemprop="availableLanguage" itemscope itemtype="http://schema.org/Language"><span itemprop="name">EN</span></a></li>
+			<li><a href="#" title="PL" itemprop="availableLanguage" itemscope itemtype="http://schema.org/Language"><span itemprop="name">PL</span></a></li>
+		</ul>
+	</div>
+</aside>
+<!-- END .sidebar -->
+
+
+<div class="js-box box">
+	<div class="js-menu-section box__section" data-menu="menu2">
+		<button class="btn-prev js-btn-prev" type="button">{{mixins.icon('arrow')}}</button>
+		<div class="box__heading">{{mixins.imgSvg('bullet')}}</div>
+		<p class="box__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. quidem excepturi, perferendis eos.</p>
+
+		<ul class="menu menu_in">
+			<li><a title="Программное обеспечение" href="software.html">Программное обеспечение</a></li>
+			<li><a title="Продвинутые технологии" href="technologies.html">Продвинутые технологии</a></li>
+			<li><a title="Умное предприятие" href="smart-company.html">Умное предприятие</a></li>
+			<li><a title="Цифровая трансформация" href="digital-transformation.html">Цифровая трансформация</a></li>
+		</ul>
+	</div>
+
+	<div class="js-menu-section box__section" data-menu="menu4">
+		<button class="btn-prev js-btn-prev" type="button">{{mixins.icon('arrow')}}</button>
+		<div class="box__heading">{{mixins.imgSvg('bullet')}}</div>
+		<p class="box__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. quidem excepturi, perferendis eos.</p>
+
+		<ul class="menu menu_in">
+			<li><a title="Программное обеспечение" href="software.html">Программное обеспечение</a></li>
+			<li><a title="Продвинутые технологии" href="technologies.html">Продвинутые технологии</a></li>
+			<li><a title="Умное предприятие" href="smart-company.html">Умное предприятие</a></li>
+			<li><a title="Цифровая трансформация" href="digital-transformation.html">Цифровая трансформация</a></li>
+		</ul>
+	</div>
+
+	<div class="js-menu-section box__section" data-menu="menu5">
+		<button class="btn-prev js-btn-prev" type="button">{{mixins.icon('arrow')}}</button>
+		<div class="box__heading">{{mixins.imgSvg('bullet')}}</div>
+		<p class="box__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. quidem excepturi, perferendis eos.</p>
+
+		<ul class="menu menu_in">
+			<li><a title="Вакансии" href="vacancies.html">Вакансии</a></li>
+			<li><a title="Тренинги" href="trainings.html">Тренинги</a></li>
+			<li><a title="Сотрудничество с вузами" href="vuz.html">Сотрудничество с вузами</a></li>
+			<li><a title="Отправить резюме" href="resume.html">Отправить резюме</a></li>
+		</ul>
+	</div>
+
+	<div class="js-menu-section box__section" data-menu="menu6">
+		<button class="btn-prev js-btn-prev" type="button">{{mixins.icon('arrow')}}</button>
+		<div class="box__heading">{{mixins.imgSvg('bullet')}}</div>
+		<p class="box__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. quidem excepturi, perferendis eos.</p>
+
+		<ul class="menu menu_in">
+			<li><a title="Программное обеспечение" href="software.html">Программное обеспечение</a></li>
+			<li><a title="Продвинутые технологии" href="technologies.html">Продвинутые технологии</a></li>
+			<li><a title="Умное предприятие" href="smart-company.html">Умное предприятие</a></li>
+			<li><a title="Цифровая трансформация" href="digital-transformation.html">Цифровая трансформация</a></li>
+		</ul>
+	</div>
+</div>
+

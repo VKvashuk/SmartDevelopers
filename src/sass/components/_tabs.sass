@@ -1,0 +1,38 @@
+.tabs
+	&.tabs_white
+		.tabs__caption-wrapper
+			margin-bottom: -28px
+			top: -83px
+			display: flex
+			justify-content: space-between
+			flex-direction: row
+			+r(992)
+				overflow-x: scroll
+				overflow-y: hidden
+				padding-bottom: 4px
+		.tabs__trigger
+			color: $white
+		.tabs__item:after
+			background-color: $white
+		.tabs__caption
+			max-width: 560px
+			min-width: 560px
+			display: inline-flex
+	&.tabs_noshadow
+		.items
+			box-shadow: none
+
+
+.opening
+	.count
+		font-size: $text-xs //13px
+		color: $white
+		+font-family($mont-semibld)
+		text-transform: uppercase
+		text-decoration: none
+		+sm
+			display: none
+	.item__controls-link
+		max-width: 210px
+		+r(569)
+			max-width: 100%

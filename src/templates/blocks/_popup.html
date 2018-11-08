@@ -1,0 +1,32 @@
+<!-- BEGIN .popup -->
+<div class="popup js-popup popup_form" data-popup="sidebar">
+	<div class="popup__content js-popup-prevent">
+		<div class="popup__header">
+			<h2 class="title-semi-lg text-blue title-shaped">Что вам интересно?</h2>
+			<button class="btn btn-close js-popup-control js-aside-control" data-popup="sidebar">{{mixins.icon('close')}}</button>
+			<p>Просто напишите нам, и мы предоставим интересующую вас информацию</p>
+		</div>
+
+		<form action="/" class="form popup__form">
+			<div class="form__field">
+				<input type="text" id="userName" placeholder="Афанасий" class="input form__input" required="">
+				<label for="userName" class="form__label">Имя:</label>
+			</div>
+
+			<div class="form__field">
+				<input type="tel" id="userPhone" name="cell_phone" class="input form__input userPhoneModal" placeholder="" required="">
+				<label for="userPhone" class="form__label">Телефон или email:</label>
+				<span class="error-msg hide">Укажите корректный номер</span>
+				<span class="valid-msg hide">✓ Корректный номер</span>
+			</div>
+
+			<div class="form__field">
+				<textarea cols="15" rows="5" id="userComment" class="textarea form__textarea" placeholder="Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus." required=""></textarea>
+				<label for="userComment" class="form__label">Вопрос или сообщение:</label>
+
+				<button type="submit" class="btn btn_success btn_icon"><span>ОТПРАВИТЬ</span>{{mixins.icon('send')}}</button>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- END .popup -->

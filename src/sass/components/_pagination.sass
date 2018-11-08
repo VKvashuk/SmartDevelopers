@@ -1,0 +1,48 @@
+.pagination
+	display: inline-flex
+	flex-direction: row
+	justify-content: space-between
+	width: 100%
+	li
+		width: 44px
+		height: 44px
+		&.pagination__next
+			width: auto
+			height: auto
+		&.pagination__next a
+			width: 187px
+			justify-content: space-between
+			display: flex
+			flex-direction: row
+			align-items: center
+			padding: 0 24px
+			+r(569)
+				width: 44px
+				padding: 0
+				justify-content: center
+			span
+				+r(569)
+					display: none
+			svg
+				width: 21px
+				height: 16px
+				fill: #ADB5BD
+		&.is-current a
+			background-color: $blue
+			border-color: $blue
+			+font-family($mont-exbld)
+			color: $white
+		a
+			color: $gray
+			border: 1px solid $gray-btn-bdr
+			font-size: $text-xs //13px
+			vertical-align: middle
+			border-radius: 50px
+			display: block
+			+font-family($mont-semibld)
+			height: 100%
+			line-height: 44px
+			background-color: transparent
+			text-align: center
+			text-transform: uppercase
+			text-decoration: none

@@ -1,0 +1,50 @@
+.sitemap
+	padding-bottom: 60px
+	&-page
+		.preview__wrapper-text
+			padding-top: 38px
+			margin-bottom: 0
+	.inner
+		+r(668)
+			padding: 0 16px
+	ul.list-dotted
+		li
+			a
+				+font-family($noto-bld)
+			& > ul li a
+				+font-family($noto-reg)
+		&.list-null li a
+			+font-family($noto-reg)
+
+
+
+
+.cols
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+	.col
+		width: 30%
+		+r(992)
+			width: 50%
+		+r(900)
+			width: 100%
+			margin-bottom: 24px
+		+sm
+			width: 50%
+		+r(668)
+			width: 100%
+		+r(580)
+			width: 50%
+		+r(481)
+			width: 100%
+		.title-semi-md
+			margin-bottom: 14px
+			&.mt-1x
+				margin-top: 28px
+			a
+				color: inherit
+				text-decoration: none
+				&:hover
+					text-decoration: underline

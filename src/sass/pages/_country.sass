@@ -1,0 +1,304 @@
+.sldr
+	padding-top: 15px
+	padding-left: 48px
+	+r(730)
+		padding-left: 16px
+	&-wrapper
+		position: relative
+	img
+		padding-right: 24px
+		+r(730)
+			height: 215px
+			width: auto !important
+	&-number
+		+font-family($mont-bld)
+		font-size: 16px
+		color: $gray
+		margin-top: 27px
+		margin-bottom: 52px
+		+r(730)
+			margin-bottom: 32px
+		&::first-letter
+			color: $blue
+	&-text
+		max-width: 1280px
+		margin: 0 auto
+		margin-bottom: 53px
+		+r(730)
+			padding-right: 16px
+		p
+			max-width: 858px
+
+	.icon-arrow
+		fill: #ADB5BD
+		width: 44px
+		height: 44px
+		padding: 10px
+		border: 2px solid #ADB5BD
+		border-radius: 50%
+		cursor: pointer
+		position: absolute
+	.sldr-prev
+		transform: rotate(180deg)
+		bottom: -60px
+		right: 76px
+		+r(730)
+	.sldr-next
+		bottom: -60px
+		right: 16px
+		+r(730)
+
+
+.progress
+	.inner
+		+r(766)
+			padding: 0 15px
+	&-items
+		display: flex
+		justify-content: space-between
+		padding-bottom: 52px
+		padding-top: 60px
+		+r(766)
+			flex-direction: column
+			padding-bottom: 0px
+	&-item
+		width: 240px
+		+r(1279)
+			margin-left: 10px
+		+r(766)
+			width: auto
+			margin-left: 9px
+			margin-bottom: 35px
+		h3
+			+font-family($mont-bld)
+			font-size: 22px
+			position: relative
+			margin-bottom: 36px
+			line-height: 1
+			+r(766)
+				display: inline-block
+				vertical-align: middle
+				margin-bottom: 3px
+				padding-left: 39px
+			&:before
+				content: ""
+				position: absolute
+				width: 64px
+				height: 4px
+				background: $gray-btn-bdr
+				bottom: -23px
+				left: 1px
+				+r(766)
+					display: none
+			+r(1279)
+				font-size: 18px
+
+
+
+	&-number
+		font-size: 72px
+		color: $blue
+		+font-family($mont-md)
+		line-height: 1
+		+r(1279)
+			font-size: 64px
+			margin-bottom: 8px
+		+r(766)
+			display: inline-block
+			vertical-align: middle
+			margin-bottom: 0px
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		padding-bottom: 18px
+		+r(766)
+			flex-direction: column
+			padding-bottom: 8px
+	&-text
+		width: 44%
+		+r(1279)
+			width: 48.5%
+		+r(766)
+			width: 100%
+		p
+			margin-bottom: 24px
+
+.vacancy
+	background: #F8F9FA
+	padding-top: 49px
+	padding-bottom: 64px
+	+r(730)
+		padding-top: 30px
+	.inner
+		+r(766)
+			padding: 0 15px
+	&-title-wrapper
+		display: flex
+		justify-content: space-between
+		+r(730)
+			flex-direction: column
+			align-items: center
+	&-title
+		+r(730)
+			text-align: center
+			font-size: 20px
+	.btn
+		font-size: 13px
+		width: 162px
+		+r(730)
+			margin-top: 17px
+	ul
+		display: flex
+		justify-content: space-between
+		+r(992)
+			flex-direction: column
+		+sm
+			flex-direction: row
+		+r(730)
+			align-items: center
+		+r(668)
+			flex-direction: column
+			align-items: baseline
+	ul li
+		width: 46%
+		+r(992)
+			width: 100%
+			align-items: center
+		+r(768)
+			width: 48%
+		+r(730)
+			width: 100%
+		h3
+			font-size: 22px
+			color: $blue
+			font-family: $mont-bld
+			margin-top: 26px
+			margin-bottom: 15px
+			+r(730)
+				font-size: 16px
+		.btn
+			margin-top: 25px
+			width: 220px
+			+r(730)
+				margin: 0 auto
+				margin-top: 16px
+			+r(668)
+				margin: 16px 0 0 0
+			+r(400)
+				width: 100%
+	.btn svg
+		fill: #fff
+
+.address
+	padding-top: 52px
+	+r(730)
+		padding-top: 30px
+	.inner
+		+r(766)
+			padding: 0 15px
+	&-wrapper
+		display: flex
+		flex-wrap: wrap
+		border-bottom: 1px solid $gray-bdr
+		padding-bottom: 62px
+		width: 100%
+		+r(768)
+			padding-bottom: 42px
+	&-block
+		width: 44%
+		+r(1090)
+			width: 100%
+		+r(769)
+			width: 52%
+		+r(730)
+			width: 100%
+
+	&-tel,
+	&-place,
+	&-social,
+	&-social p
+		font-size: 16px
+		font-family: $mont-bld
+
+		+r(730)
+			text-align: center
+
+	&-tel
+		color: #495057
+		text-decoration: none
+		display: block
+		margin-top: 30px
+		margin-bottom: 18px
+		+r(730)
+			margin-top: 18px
+			margin-bottom: 12px
+	&-place
+		font-size: 16px
+		font-family: $mont-bld
+		position: relative
+		margin-bottom: 32px
+		&:before
+			position: absolute
+			content: ""
+			background: #DEE2E6
+			width: 64px
+			height: 4px
+			bottom: -16px
+			left: 0
+			+r(730)
+				left: 0
+				right: 0
+				margin: auto
+	&-title
+		+r(730)
+			text-align: center
+			font-size: 20px
+	&-work
+		+r(730)
+			text-align: center
+	&-social
+		width: 349px
+		height: 64px
+		border: 1px solid $gray-bdr
+		border-radius: 5px
+		padding: 20px 20px 23px 24px
+		margin-top: 40px
+		display: flex
+		+r(1150)
+			width: 324px
+		+r(730)
+			margin: 0 auto
+			margin-top: 26px
+		+r(360)
+			 width: auto
+		p
+			margin-right: 40px
+			+r(1150)
+				margin-right: 20px
+		.social__link
+			text-decoration: none
+			margin: 0 5px
+			+r(1150)
+				margin: 0 7px
+			+r(668)
+				margin: 0 5px
+		svg
+			fill: $blue
+			max-width: 20px
+			height: 17px
+			vertical-align: middle
+	&-map
+		width: 56%
+		+r(1090)
+			width: 100%
+			height: 348px
+			padding-top: 30px
+		+r(769)
+			width: 48%
+		+r(730)
+			width: 100%
+
+
+
+
+

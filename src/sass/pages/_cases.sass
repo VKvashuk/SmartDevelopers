@@ -1,0 +1,44 @@
+.cases
+	&-page
+		.preview__wrapper-text
+			+r(668)
+				padding-top: 36px
+		.tabs__caption
+			max-width: 515px
+			min-width: 515px
+		.news_tab .tabs__field
+			.item
+				+r(992)
+					margin-bottom: 24px
+				+sm
+					max-width: 49%
+				+r(668)
+					max-width: 100%
+					margin-right: 0
+			&:not(:last-child)
+				+r(992)
+					margin-bottom: 0
+		.news
+			&.news_tab
+				.tabs__field
+					+r(992)
+						flex-direction: row
+					+r(930)
+						flex-direction: column
+					+sm
+						flex-direction: row
+					+r(668)
+						flex-direction: column
+					&.tabs_large .item
+						max-width: 100%
+					.item
+						max-width: 50%
+						+r(930)
+							max-width: 100%
+							margin-right: 0
+						+sm
+							max-width: 50%
+							margin-right: 16px
+						+r(668)
+							max-width: 100%
+							margin-right: 0

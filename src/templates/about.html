@@ -1,0 +1,67 @@
+---
+title: О нас
+formBg: bg-gray
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!--BEGIN .preview -->
+<section class="preview" style="background-image: url('img/bg-about.jpg');">
+	<div class="preview__wrapper">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="О компании">
+					<span itemprop="name">О компании</span>
+				</span>
+				<meta itemprop="position" content="2">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg">Lorem ipsum dolor sit amet, consectetuer</h1>
+			<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .about -->
+<section class="about">
+	<div class="about-item">
+		<img src="img/bg-company-1@2x.jpg" alt="company">
+		<div class="about-text">
+			<h3>Компания</h3>
+			<ul>
+				<li><a href="#" title="Руководство">Руководство{{mixins.icon('caret')}}</a></li>
+				<li><a href="#" title="SmartDevelopers Ukraine">SmartDevelopers Ukraine{{mixins.icon('caret')}}</a></li>
+				<li><a href="#" title="SmartDevelopers Polland">SmartDevelopers Polland{{mixins.icon('caret')}}</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="about-item">
+		<img src="img/bg-company-2@2x.jpg" alt="company">
+		<div class="about-text">
+			<h3>Новости и события</h3>
+			<ul>
+				<li><a href="#" title="Новости компании">Новости компании {{mixins.icon('caret')}}</a></li>
+				<li><a href="#" title="События">События {{mixins.icon('caret')}}</a></li>
+				<li><a href="#" title="СМИ о нас">СМИ о нас {{mixins.icon('caret')}}</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="about-item">
+		<img src="img/bg-company-3@2x.jpg" alt="company">
+		<div class="about-text"><h3>Инвесторам</h3></div>
+	</div>
+</section>
+<!-- END .about -->
+{% include "blocks/_question.html" %}
+{% endblock %}

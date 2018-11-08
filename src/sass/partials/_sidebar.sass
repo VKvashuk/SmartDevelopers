@@ -1,0 +1,68 @@
+.sidebar
+	height: 100vh
+	max-width: 254px
+	width: 100%
+	transition: transform .33s ease-in-out, opacity .24s ease-in-out
+	z-index: 60
+	position: sticky
+	float: left
+	top: 0
+	left: 0
+	opacity: 1
+	overflow: visible
+	background-color: $white
+	box-shadow: 0 0 3px rgba($black, .20)
+	+sm
+		position: fixed
+		transform: translateX(-200%)
+		-webkit-transform: translateX(-200%)
+		-ms-transform: translateX(-200%)
+		transform: translateX(-200%)
+		-moz-transform: translateX(-200%)
+		-o-transform: translateX(-200%)
+	.btn_ghost
+		margin-bottom: 29.1px
+		text-shadow: none
+		width: 100%
+		+r(668)
+			margin-bottom: 50px
+	.btn.btn_ghost
+		svg
+			fill: $blue
+	&.is-open
+		-webkit-transform: translateX(0)
+		-ms-transform: translateX(0)
+		transform: translateX(0)
+		-moz-transform: translateX(0)
+		-o-transform: translateX(0)
+	&__wrapper
+		padding: 48px 16px 0
+		display: flex
+		flex-direction: column
+		height: 100%
+		width: 100%
+		+r(668)
+			padding: 16px 16px 97px 16px
+		.list-lang
+			+r(668)
+				min-height: 97px
+				height: 97px
+	&__header
+		text-align: center
+		margin: 0 auto 48px
+		+clr
+		+md
+			margin-bottom: 24px
+		+r(668)
+			margin-bottom: 10px
+		.btn-close
+			float: right
+	.search
+		margin-bottom: 73px
+		+md
+			margin-bottom: 20px
+		+r(668)
+			margin-bottom: 10px
+	.menu
+		+xs
+			margin-bottom: 32px

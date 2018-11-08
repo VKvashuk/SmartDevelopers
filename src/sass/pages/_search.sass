@@ -1,0 +1,79 @@
+.search
+	&-page
+		margin-top: 0
+		.preview__wrapper
+			+r(668)
+				padding-bottom: 48.5px
+		.preview__wrapper-text
+			+sm
+				padding-right: 48px
+				padding-top: 39px
+			+r(668)
+				padding-top: 78px
+				margin-bottom: 0
+				padding-right: 16px
+		.pagination-container
+			max-width: 430px
+			+r(992)
+				margin: 0 auto
+			+r(568)
+				max-width: 300px
+		.questions
+			background-color: $search-bg
+		.opening
+			border-top: 1px solid $gray-bdr
+			padding-top: 29px
+			.inner
+				+r(668)
+					padding: 0
+			.item
+				+r(668)
+					padding: 24.5px 0 32.5px
+			.item__container
+				+r(668)
+					padding: 0 16px
+			.item__controls
+				margin-top: 41px
+				+r(992)
+					align-items: baseline
+				.btn
+					color: $gray
+					text-shadow: none
+					text-transform: uppercase
+					box-shadow: none
+	&__form
+		max-width: 480px
+		+sm
+			max-width: 100%
+		p
+			margin-bottom: 42px
+			+r(668)
+				margin-bottom: 28px
+		.input
+			width: 100%
+			max-width: 100%
+			padding-right: 64px
+		.input__field
+			position: relative
+		.btn-search
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 0
+			width: 60px
+			height: 100%
+			background-image: none
+			background-color: transparent
+			svg
+				fill: $search-icon
+				width: 18px
+				height: 18px
+
+
+.opening
+	h3
+		color: $black
+		margin-bottom: 18px
+		+font-family($mont-bld)
+		font-size: 22px
+		letter-spacing: 0.02rem

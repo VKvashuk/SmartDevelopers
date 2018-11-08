@@ -1,0 +1,80 @@
+.software
+	&-page
+		font-size: 15px
+		.preview__wrapper
+			&-text
+				max-width: 610px
+		.items
+			font-size: 0
+			max-width: 930px
+			margin: 0 auto
+			display: flex
+			padding: 69px 0 60.5px
+			flex-direction: column
+			border-bottom: 1px solid $gray-bdr
+			&__field
+				display: flex
+				justify-content: space-between
+				flex-direction: row
+				+r(992)
+					flex-direction: column
+				+sm
+					flex-direction: row
+				&:not(:last-child)
+					margin-bottom: 28px
+				+r(668)
+					align-items: center
+					flex-direction: column
+		.items .item
+			font-size: 16px
+			width: 100%
+			display: inline-block
+			max-width: 394px
+			padding-left: 58px
+			vertical-align: top
+			position: relative
+			+r(1200)
+				padding-right: 10px
+			+r(992)
+				padding-right: 0
+				max-width: 100%
+			+sm
+				max-width: 320px
+			+r(668)
+				max-width: 100%
+			&:not(:last-child)
+				+r(992)
+					margin-bottom: 28px
+				+sm
+					margin-bottom: 0
+				+r(668)
+					margin-bottom: 28px
+
+.soft
+	h2
+		letter-spacing: 0.02rem
+		font-size: 22px
+		+font-family($mont-bld)
+		span
+			margin-bottom: 10px
+			display: block
+			color: $black
+		.svg-icon
+			width: 42px
+			height: 42px
+			border-radius: 50px
+			background-color: $gray-bdr
+			position: absolute
+			top: -7px
+			left: 0
+			margin-bottom: 0
+			display: flex
+			align-items: center
+			justify-content: center
+		.svg-icon svg
+			width: 18px
+			height: 13px
+			fill: $blue
+	.inner
+		+r(668)
+			padding: 0 16px

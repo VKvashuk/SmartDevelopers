@@ -1,0 +1,248 @@
+.progress
+
+	.inner
+		+r(766)
+			padding: 0 15px
+
+	&-items
+		display: flex
+		justify-content: space-between
+		padding-bottom: 52px
+		padding-top: 60px
+
+		+r(766)
+			flex-direction: column
+			padding-bottom: 0px
+
+	&-item
+		width: 240px
+
+		+r(1279)
+			margin-left: 10px
+
+		+r(766)
+			width: auto
+			margin-left: 9px
+			margin-bottom: 35px
+
+		h3
+			+font-family($mont-bld)
+			font-size: 22px
+			position: relative
+			// display: block
+			margin-bottom: 36px
+			line-height: 1
+
+			+r(766)
+				display: inline-block
+				vertical-align: middle
+				margin-bottom: 3px
+				padding-left: 39px
+
+			&:before
+				content: ""
+				position: absolute
+				width: 64px
+				height: 4px
+				background: $gray-btn-bdr
+				bottom: -23px
+				left: 1px
+
+				+r(766)
+					display: none
+
+			+r(1279)
+				font-size: 18px
+
+
+
+	&-number
+		font-size: 72px
+		color: $blue
+		+font-family($mont-md)
+		line-height: 1
+
+		+r(1279)
+			font-size: 64px
+			margin-bottom: 8px
+
+		+r(766)
+			display: inline-block
+			vertical-align: middle
+			margin-bottom: 0px
+
+
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		padding-bottom: 18px
+
+		+r(766)
+			flex-direction: row
+			padding-bottom: 8px
+		+r(668)
+			flex-direction: column
+	&-text
+		width: 44%
+
+		+r(1279)
+			width: 48.5%
+		+r(668)
+			width: 100%
+
+
+		p
+			margin-bottom: 24px
+
+.company
+
+	.inner
+		+r(766)
+			padding: 0 15px
+
+	&-title
+		// max-width: 1184px
+		margin: 0 auto
+		margin-bottom: 40px
+		padding-left: 47px
+
+		+r(1279)
+			text-align: center
+			padding-left: 0px
+
+		+r(766)
+			font-size: 20px
+
+
+
+	&-items
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+
+		max-width: 1084px
+		margin: 0 auto
+		margin-bottom: 22px
+
+		+r(766)
+			justify-content: space-around
+
+	&-item
+		width: 160px
+		height: 60px
+		background-color: $gray-btn-bdr
+		margin-bottom: 33px
+		margin-right: 12px
+		margin-left: 12px
+		align-items: center
+		// flex-basis: 180px
+
+		+r(1279)
+			width: 150px
+			height: 55px
+			// margin-right: 18px
+			// margin-left: 18px
+			margin-right: 2%
+			margin-left: 2%
+			margin-bottom: 24px
+
+			&:nth-child(n+13)
+				display: none
+		+r(1150)
+			margin-right: 1%
+			margin-left: 1%
+
+		+r(766)
+			width: 160px
+			height: 60px
+
+
+
+
+.industry
+
+
+	// +r(766)
+
+
+
+	.inner
+		// padding-bottom: 64px
+		// border-bottom: 1px solid #e9ecef
+		+r(766)
+			padding: 0 15px
+			// padding-bottom: 16px
+
+	+r(1279)
+		margin-bottom: 33px
+
+	&-title
+		margin-bottom: 22px
+		padding-left: 47px
+
+		+r(1279)
+			text-align: center
+			padding-left: 0px
+			margin-bottom: 14px
+
+		+r(766)
+			font-size: 20px
+
+	&-items
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		+r(1279)
+			margin-bottom: 12px
+		+r(766)
+			margin-bottom: 0px
+
+
+	&-item
+
+		width: 48%
+		min-width: 258px
+		// display: block
+		margin-bottom: 26px
+		display: flex
+		align-items: center
+
+		+r(550)
+			width: 100%
+
+			&:nth-child(even)
+				order: 2
+
+		p
+			// display: inline-block
+			// vertical-align: middle
+			font-size: 16px
+			font-family: $mont-bld
+			max-width: 250px
+
+			+r(1279)
+				max-width: 240px
+
+
+
+
+
+		svg
+			width: 62px
+			height: 62px
+			// vertical-align: baseline
+			// vertical-align: middle
+			fill: none
+			stroke: $blue
+			margin-right: 25px
+	&-text
+		padding-bottom: 64px
+		border-bottom: 1px solid #e9ecef
+		+r(766)
+				padding-bottom: 16px
+
+
+
+

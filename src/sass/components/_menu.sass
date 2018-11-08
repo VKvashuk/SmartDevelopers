@@ -1,0 +1,124 @@
+.menu
+	font-size: 0
+	margin-bottom: 52.7px
+	+r(668)
+		margin-bottom: 14px
+	&__item
+		display: block
+	&__link
+		display: block
+		text-decoration: none
+		color: $gray
+		font-size: $text-reg
+		+font-family($noto-reg)
+		line-height: 1.6
+		padding: 20px 16px
+		transition: color .24s ease-in-out
+		-moz-transition: color .24s ease-in-out
+		-ms-transition: color .24s ease-in-out
+		-webkit-transition: color .24s ease-in-out
+		position: relative
+		border-bottom: 1px solid $gray-bdr
+		.icon-caret
+			position: absolute
+			right: 16px
+			width: 7.41px
+			fill: $slider-dots
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+			-ms-transform: translateY(-50%)
+			-moz-transform: translateY(-50%)
+			-o-transform: translateY(-50%)
+			transition: fill .24s ease-in-out
+			-moz-transition: fill .24s ease-in-out
+		&.is-active,
+		&.is-current,
+		&:hover
+			color: $blue
+			.icon-caret
+				fill: $blue
+		&.is-active,
+		&.is-current
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				right: -16px
+				transform: translateY(-50%)
+				-moz-transform: translateY(-50%)
+				-ms-transform: translateY(-50%)
+				-o-transform: translateY(-50%)
+				-webkit-transform: translateY(-50%)
+				+arr(12, 24, $blue-second, l)
+				+r(668)
+					display: none
+	&.menu_in
+		li
+			&:not(:last-child) a
+				margin-bottom: 18.4px
+			a
+				font-size: $text-reg
+				color: $white
+				padding-left: 8px
+				+font-family($noto-reg)
+				line-height: 1.33
+				text-decoration: none
+				display: block
+				padding-bottom: 16.2px
+				border-bottom: 1px solid rgba($black, .10)
+.box
+	position: sticky
+	top: 0
+	left: 254px
+	width: 254px
+	opacity: 0
+	padding: 30px 15px 60px
+	pointer-events: none
+	z-index: 9999
+	visibility: hidden
+	margin-right: -254px
+	float: left
+	transition: opacity .24s ease-in-out
+	height: 100%
+	min-height: 100vh
+	height: 100vh
+	background-color: $blue-second
+	transform: translateX(-200%)
+	-webkit-transform: translateX(-200%)
+	-moz-transform: translateX(-200%)
+	-ms-transform: translateX(-200%)
+	-o-transform: translateX(-200%)
+	&.is-open
+		display: block
+		pointer-events: auto
+		opacity: 1
+		visibility: visible
+		transform: translateX(0)
+		-webkit-transform: translateX(0)
+		-o-transform: translateX(0)
+		-moz-transform: translateX(0)
+		-ms-transform: translateX(0)
+	+sm
+		position: fixed
+	+r(668)
+		left: 0
+	&__section
+		display: none
+		position: relative
+		+sm
+			padding-top: 48px
+		&.is-active
+			display: block
+	&__heading
+		width: 63px
+		height: 63px
+		margin-left: 8px
+		margin-bottom: 23px
+	&__description
+		font-size: $text-reg //15px
+		+font-family($noto-reg)
+		color: $sidebar-in-desc
+		padding-left: 8px
+		padding-bottom: 41px

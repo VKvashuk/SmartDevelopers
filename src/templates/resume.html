@@ -1,0 +1,97 @@
+---
+title: Отправить резюме
+mainClasses: resume-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview">
+	<div class="preview__wrapper bg-gray">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs text-gray" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/career" class="breadcrumbs__link" itemprop="item" title="Карьера"><span itemprop="name">Карьера</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/vacancies" class="breadcrumbs__link" itemprop="item" title="Вакансии"><span itemprop="name">Вакансии</span></a>
+				<meta itemprop="position" content="3">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Отправить резюме">
+					<span itemprop="name">Отправить резюме</span>
+				</span>
+				<meta itemprop="position" content="4">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg text-blue">Отправить резюме</h1>
+			<p class="text-md text-gray">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .register -->
+<section class="register">
+	<div class="inner">
+		<h2 class="title-lg text-blue">Добро пожаловать в команду</h2>
+		<form action="/" class="form">
+			<div class="form__row">
+				<div class="form__field">
+					<input id="userName" type="text" class="input form__input" required="" placeholder="Афанасий">
+					<label for="userName" class="form__label">Имя:</label>
+				</div>
+
+				<div class="form__field">
+					<input id="userLastName" type="text" class="input form__input" required="" placeholder="Афанасий">
+					<label for="userLastName" class="form__label">Фамилия:</label>
+				</div>
+
+				<div class="form__field">
+					<input id="userCity" type="text" class="input form__input" required="" placeholder="Киев">
+					<label for="userCity" class="form__label">Город проживания:</label>
+				</div>
+			</div>
+
+			<div class="form__row">
+				<div class="form__field">
+					<input id="userPhone" type="tel" class="input form__input userPhone" required="" placeholder="">
+					<label for="userPhone" class="form__label">Телефон:</label>
+				</div>
+
+				<div class="form__field">
+					<input id="userEmail" type="email" class="input form__input" required="" placeholder="mail@example.com">
+					<label for="userEmail" class="form__label">Email:</label>
+				</div>
+
+				<div class="form__field">
+					<label for="input-file" class="label__hidden">
+						<div class="input__file">
+							<input type="file" id="input-file" class="input form__input"  accept=".pdf">
+						</div>
+						<input type="text" class="input" required="" placeholder="resume.pdf" disabled="">
+					</label>
+
+					<label for="input-file" class="form__label">Файл с резюме:</label>
+				</div>
+			</div>
+
+			<div class="form__field textarea_field">
+				<textarea  class="textarea" id="userLetter" rows="5" placeholder="Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus."></textarea>
+				<label for="userLetter" class="form__label">Сопроводительное письмо (не обязательно):</label>
+			</div>
+
+			<button class="btn btn_success btn_icon" type="submit"><span>ОТПРАВИТЬ РЕЗЮМЕ</span>{{mixins.icon('send')}}</button>
+		</form>
+	</div>
+</section>
+<!-- END .register -->
+{% endblock%}

@@ -1,0 +1,64 @@
+---
+title: Карьера
+mainClasses: main-career
+formBg: bg-gray
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!--BEGIN .preview -->
+<section class="preview" style="background-image: url('img/bg-career@2x.jpg');">
+	<div class="preview__wrapper">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+				<span itemprop="item" class="breadcrumbs__link" title="Карьера">
+					<span itemprop="name">Карьера</span>
+				</span>
+				<meta itemprop="position" content="2">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg">Карьера</h1>
+			<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .career -->
+<section class="career">
+	<div class="career-item">
+		<img src="img/career-vacancy.jpg" alt="company">
+		<div class="career-text">
+			<h3>Вакансии</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+		</div>
+	</div>
+
+	<div class="career-item">
+		<img src="img/career-training.jpg" alt="company">
+		<div class="career-text">
+			<h3>Тренинги</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+		</div>
+	</div>
+
+	<div class="career-item">
+		<img src="img/career-university.jpg" alt="company">
+		<div class="career-text">
+			<h3>Сотрудничество с вузами</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+		</div>
+	</div>
+</section>
+<!-- END .career -->
+{% include "blocks/_question.html" %}
+
+{% endblock %}

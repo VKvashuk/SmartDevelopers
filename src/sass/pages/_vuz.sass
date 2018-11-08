@@ -1,0 +1,63 @@
+.vuz
+	&-page
+		display: block
+		.question
+			border-top: 1px solid $gray-bdr
+		.preview__wrapper-text
+			+sm
+				margin-bottom: 25px
+			+r(668)
+				margin-bottom: 0
+				padding-right: 16px
+.cooperation
+	padding: 55px 0 64px
+	+r(668)
+		padding: 48px 0
+	.inner
+		+r(668)
+			padding: 0 16px
+	&__field
+		margin-bottom: 40px
+		padding-bottom: 40px
+		border-bottom: 1px solid $gray-bdr
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		+r(992)
+			flex-direction: column
+		.col
+			&.col_image
+				width: 100%
+				max-width: 365px
+				+r(992)
+					margin-bottom: 28px
+					max-width: 100%
+					height: 225px
+					img
+						width: 50%
+						height: 100%
+						vertical-align: middle
+						display: inline-block
+						object-fit: cover
+				+r(668)
+						text-align: center
+				img
+					+r(668)
+						width: 100%
+						max-width: 335px
+			img
+				&:not(.mq_image)
+					+r(668)
+						display: none
+			img:not(:last-child)
+				margin-bottom: 16px
+				+r(992)
+					margin-bottom: 0
+					padding-right: 10px
+				+r(668)
+					padding-right: 0
+			&.col_text
+				padding-left: 16px
+				display: flex
+				flex-direction: column
+				justify-content: space-between

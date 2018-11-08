@@ -1,0 +1,70 @@
+.header
+	box-shadow: 0 1px 3px rgba($black, .16)
+	padding: 12px 24px
+	+clr
+	display: none
+	position: relative
+	z-index: 10
+	+sm
+		display: block
+	+r(481)
+		padding: 16px 20px
+		text-align: center
+	&__search
+		float: right
+		max-width: 175px
+		width: 100%
+		+r(481)
+			max-width: initial
+			width: auto
+			margin-top: 8px
+		&-wrapper
+			position: absolute
+			top: 50%
+			left: 50%
+			height: 100%
+			padding: 12px 24px
+			transform: translate(-50%, -50%)
+			-ms-transform: translate(-50%, -50%)
+			-o-transform: translate(-50%, -50%)
+			-webkit-transform: translate(-50%, -50%)
+			-moz-transform: translate(-50%, -50%)
+			background-color: $white
+			width: 0
+			opacity: 0
+			display: none
+			visibility: hidden
+			overflow: hidden
+			transition: all .24s ease-in-out
+			&.is-open
+				width: 85%
+				opacity: 1
+				display: block
+				visibility: visible
+				overflow: visible
+			.search
+				height: 100%
+				&__field
+					height: 100%
+				&__field input
+					height: 100%
+			form
+				display: block
+				height: 100%
+				width: 100%
+				position: relative
+				+r(481)
+					float: right
+					margin-left: 0
+		.btn_ghost
+			text-align: center
+			color: $gray
+			font-size: $text-xs //13px
+			text-shadow: none
+			display: inline-block
+			vertical-align: middle
+			max-width: 130px
+			padding: 10px 20px
+			text-transform: uppercase
+			+r(481)
+				display: none

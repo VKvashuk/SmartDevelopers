@@ -1,0 +1,181 @@
+---
+title: Новости и события
+mainClasses: news-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview">
+	<div class="preview__wrapper bg-white">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs text-gray" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/about" class="breadcrumbs__link" itemprop="item" title="О компании"><span itemprop="name">О компании</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Новости и события">
+					<span itemprop="name">Новости и события</span>
+				</span>
+				<meta itemprop="position" content="3">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg text-blue">Новости и события</h1>
+			<p class="text-md text-gray">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .news -->
+<section class="news news_tab">
+	<div class="inner">
+		<!-- BEGIN .tabs -->
+		<div class="tabs">
+			<div class="tabs__caption-wrapper">
+				<ul class="tabs__caption">
+					<li class="tabs__item is-active"><a href="#" class="tabs__trigger" title="Все">Все</a></li>
+					<li class="tabs__item"><a href="#" class="tabs__trigger" title="Новости компании">Новости компании</a></li>
+					<li class="tabs__item"><a href="#" class="tabs__trigger" title="События">События</a></li>
+					<li class="tabs__item"><a href="#" class="tabs__trigger" title="СМИ о нас">СМИ о нас</a></li>
+				</ul>
+			</div>
+
+			{% for item in range(0 ,4) %}
+			<div class="tabs__content {% if loop.index == 1 %}is-active{% endif %}">
+				<div class="tabs__field">
+					<div class="item">
+						<div class="item__image" style="background-image: url('img/news-item-00.jpg');">
+							<a href="#" class="text-shaped" title="Пресс-релис">Пресс-релис</a>
+						</div>
+
+						<div class="item__content">
+							<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							<div class="item__bottom">
+								<p class="item__date">20 марта</p>
+								<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item__image" style="background-image: url('img/news-item-00.jpg');">
+							<a href="#" class="text-shaped" title="Пресс-релис">Пресс-релис</a>
+						</div>
+
+						<div class="item__content">
+							<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							<div class="item__bottom">
+								<p class="item__date">20 марта</p>
+								<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tabs__field">
+					<div class="item">
+						<div class="item__image" style="background-image: url('img/news-item-00.jpg');">
+							<a href="#" class="text-shaped" title="Пресс-релис">Пресс-релис</a>
+						</div>
+
+						<div class="item__content">
+							<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							<div class="item__bottom">
+								<p class="item__date">20 марта</p>
+								<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item__image" style="background-image: url('img/news-item-00.jpg');">
+							<a href="#" class="text-shaped" title="Пресс-релис">Пресс-релис</a>
+						</div>
+
+						<div class="item__content">
+							<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							<div class="item__bottom">
+								<p class="item__date">20 марта</p>
+								<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tabs__field tabs_large">
+					<div class="item">
+						<div class="item__image" style="background-image: url('img/news-item-large.jpg');"></div>
+
+						<div class="item__content">
+							<a href="#" class="text-shaped shape-green" title="НОВОСТИ КОМПАНИИ">НОВОСТИ КОМПАНИИ</a>
+							<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+							<p class="item__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							<div class="item__bottom">
+								<p class="item__date">20 марта</p>
+								<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tabs__field">
+					<div class="item">
+						<div class="item__image" style="background-image: url('img/news-item-00.jpg');">
+							<a href="#" class="text-shaped" title="Пресс-релис">Пресс-релис</a>
+						</div>
+
+						<div class="item__content">
+							<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+
+							<div class="item__bottom">
+								<p class="item__date">20 марта</p>
+								<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item__image" style="background-image: url('img/news-item-00.jpg');">
+							<a href="#" class="text-shaped" title="Пресс-релис">Пресс-релис</a>
+						</div>
+
+						<div class="item__content">
+							<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+
+							<div class="item__bottom">
+								<p class="item__date">20 марта</p>
+								<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<!-- END .tabs -->
+
+		<!-- BEGIN .pagination -->
+		<div class="pagination-container">
+			<ul class="pagination">
+				<li class="is-current"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li class="pagination__next"><a href="#" title="СЛЕДУЮЩАЯ"><span>СЛЕДУЮЩАЯ</span> {{mixins.icon('arrow')}}</a></li>
+			</ul>
+		</div>
+		<!-- END .pagination -->
+	</div>
+</section>
+<!-- END .news -->
+{% include "blocks/_question.html" %}
+{% endblock %}

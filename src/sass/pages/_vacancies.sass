@@ -1,0 +1,188 @@
+.vacancies
+	&-page
+		line-height: 1.6
+		.preview__wrapper-text
+			+r(668)
+				margin-bottom: 0
+.opening
+	font-size: 0
+	padding-top: 46px
+	.inner
+		+r(668)
+			padding: 0 16px
+	&-wrapper
+		&:not(:last-child)
+			margin-bottom: 46px
+		&.no_shadow
+			.items
+				box-shadow: none
+	&__field
+		width: 100%
+	&__right
+		display: flex
+		justify-content: flex-end
+		flex-direction: row
+		align-items: center
+	&__title
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		border-bottom: 3px solid $blue
+		+r(992)
+			flex-direction: column
+		+sm
+			flex-direction: row
+		+r(668)
+			padding-bottom: 21.5px
+			align-items: flex-end
+		.count
+			font-size: $text-xs //13px
+			color: $gray
+			+font-family($mont-semibld)
+			text-transform: uppercase
+			margin-left: 58px
+			+r(1100)
+				margin-left: 24px
+			+r(668)
+				margin-left: 0
+		.title-semi-lg
+			+r(668)
+				font-size: 20px
+		.select-wrapper
+			display: inline-block
+			font-size: $text-reg
+			color: $gray
+			max-width: 250px
+			min-width: 250px
+			margin-top: 13px
+			margin-bottom: 30px
+			+r(740)
+				display: none
+		.select2
+			&-container--default
+				.select2-selection--multiple,
+				.select2-selection--single
+					border: none
+					border-radius: 0
+				.select2-selection--single .select2-selection__rendered
+					border-bottom: 1px solid $slider-dots
+					padding-bottom: 8px
+					padding-left: 10px
+				.select2-selection--single .select2-selection__arrow
+					width: 12px
+					height: 7px
+					right: 10px
+					top: 50%
+					background-image: url('../img/caret-blue.svg')
+					background-repeat: no-repeat
+					background-position: center center
+					transform: rotateZ(90deg) translateX(-30%)
+					b
+						display: none
+	.items
+		box-shadow: 0 1px 3px rgba($black, .16)
+		text-align: center
+		border-radius: 0 0 8px 8px
+		.link-justify
+			display: inline-flex
+			flex-direction: row
+			justify-content: space-between
+			font-size: $text-sm //14px
+			+font-family($mont-bld)
+			text-decoration: none
+			max-width: 140px
+			margin: 14.5px auto 15px
+			color: $gray
+			align-items: center
+			width: 100%
+			svg
+				fill: $gray
+	.item
+		padding: 21px 16px 32.4px
+		border-bottom: 1px solid $gray-bdr
+		text-align: left
+		.title-semi-md
+			color: $black
+			margin-bottom: 18px
+		&__controls
+			display: flex
+			justify-content: space-between
+			flex-direction: row
+			margin-top: 28px
+			+r(992)
+				flex-direction: column
+				align-items: center
+			+sm
+				flex-direction: row
+			+r(668)
+				flex-direction: column
+		&__controls-link
+			display: flex
+			flex-direction: row
+			max-width: 310px
+			width: 100%
+			min-height: 44px
+			border-radius: 10px
+			justify-content: space-between
+			padding: 0 32px 0 16px
+			border: 1px solid $gray-bdr
+			position: relative
+			+r(992)
+				margin-bottom: 24px
+			+sm
+				margin-bottom: 0
+				padding: 0 16px
+				max-width: 270px
+			+r(668)
+				margin-bottom: 24px
+			+r(569)
+				max-width: 80%
+				padding: 0 8px
+			+r(481)
+				max-width: 100%
+			&:after
+				content: ""
+				display: none
+				position: absolute
+				top: 50%
+				left: 50%
+				height: 70%
+				width: 1px
+				background-color: $gray-bdr
+				transform: translate(0, -50%)
+				+r(568)
+					display: block
+		&__controls .btn
+			+font-family($mont-semibld)
+			color: $white
+			+r(992)
+				width: 220px
+			+r(668)
+				width: 270px
+			+r(569)
+				width: 100%
+		&__controls a
+			color: $search-icon
+			font-size: $text-xs //13px
+			text-decoration: none
+			display: flex
+			align-items: center
+			+r(568)
+				display: flex
+				justify-content: center
+				width: 100%
+			&:not(:last-child)
+				padding-right: 20.5px
+				margin-top: 8px
+				margin-bottom: 8px
+				border-right: 1px solid $gray-bdr
+				+r(568)
+					border-right: none
+					margin-top: 0
+					margin-bottom: 0
+					padding-right: 0
+.select-wrapper
+	width: 100%
+
+

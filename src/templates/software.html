@@ -1,0 +1,75 @@
+---
+title: Программное обеспечение
+mainClasses: software-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview" style="background-image: url('img/bg-preview-software.jpg');">
+	<div class="preview__wrapper">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/solutions" class="breadcrumbs__link" itemprop="item" title="Решения"><span itemprop="name">Решения</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Программное обеспечение">
+					<span itemprop="name">Программное обеспечение</span>
+				</span>
+				<meta itemprop="position" content="3">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg">Программное обеспечение</h1>
+			<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .soft -->
+<section class="soft">
+	<div class="inner">
+		<div class="items">
+			<div class="items__field">
+				<div class="item">
+					<h2><span class="svg-icon">{{mixins.icon('check')}}</span><span>Разработка</span></h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				</div>
+				<div class="item">
+					<h2><span class="svg-icon">{{mixins.icon('check')}}</span><span>Поддержка и развитие</span></h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				</div>
+			</div>
+
+			<div class="items__field">
+				<div class="item">
+					<h2><span class="svg-icon">{{mixins.icon('check')}}</span><span>Интеграция</span></h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				</div>
+				<div class="item">
+					<h2><span class="svg-icon">{{mixins.icon('check')}}</span><span>Выделенные центры</span></h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				</div>
+			</div>
+
+			<div class="items__field">
+				<div class="item">
+					<h2><span class="svg-icon">{{mixins.icon('check')}}</span><span>Тестирование и QA</span></h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END .soft -->
+{% include "blocks/_question.html" %}
+{% endblock%}

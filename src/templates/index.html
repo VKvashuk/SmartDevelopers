@@ -1,0 +1,252 @@
+---
+title: Главная страница
+mainClasses: home
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview" style="background-image: url('img/bg-preview.jpg');">
+	<div class="preview__wrapper">
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg">Lorem ipsum dolor sit amet, consectetuer</h1>
+			<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+
+		<a href="#" title="СМОТРЕТЬ ПРОЕКТЫ" class="btn btn_ghost"><span>смотреть проекты</span></a>
+		<a href="#" title="СВЯЗАТЬСЯ С НАМИ" class="btn btn_success  js-popup-control" data-popup="sidebar"><span>связаться с нами</span></a>
+
+		<div class="js-slider-preview preview__slider">
+			<div class="item"><img src="img/60.jpg" alt="slider image"></div>
+			<div class="item"><img src="img/60.jpg" alt="slider image"></div>
+			<div class="item"><img src="img/60.jpg" alt="slider image"></div>
+			<div class="item"><img src="img/60.jpg" alt="slider image"></div>
+			<div class="item"><img src="img/60.jpg" alt="slider image"></div>
+
+			<div class="item"><img src="img/60.jpg" alt="slider image"></div>
+			<div class="item"><img src="img/60.jpg" alt="slider image"></div>
+			<div class="item"><img src="img/60.jpg" alt="slider image"></div>
+			<div class="item"><img src="img/60.jpg" alt="slider image"></div>
+			<div class="item"><img src="img/60.jpg" alt="slider image"></div>
+
+			<div class="item"><img src="img/60.jpg" alt="slider image"></div>
+			<div class="item"><img src="img/60.jpg" alt="slider image"></div>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<div class="home--container">
+	<!-- BEGIN .decree -->
+	<section class="decree">
+		<div class="inner">
+			<h2 class="title-semi-lg">Предлагаем лучшие решения</h2>
+			<div class="columns">
+				<div class="crest"></div>
+				<div class="col">
+					<div class="image">
+						<div class="image-field">{{mixins.imgSvg('program')}}</div>
+						<p class="title-sm text-blue">ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ</p>
+					</div>
+					<ul>
+						<li><a href="#" title="Разработка">Разработка{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Тестирование и QA">Тестирование и QA{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Поддержка и развитие">Поддержка и развитие{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Интеграция">Интеграция{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Выделенные центры">Выделенные центры{{mixins.icon('caret')}}</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<div class="image">
+						<div class="image-field">{{mixins.imgSvg('technology')}}</div>
+						<p class="title-sm text-blue">ПРОДВИНУТЫЕ ТЕХНОЛОГИИ</p>
+					</div>
+					<ul>
+						<li><a href="#" title="Agile">Agile{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Лаборатории инноваций">Лаборатории инноваций{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Интернет вещей (IoT)">Интернет вещей (IoT){{mixins.icon('caret')}}</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<div class="image">
+						<div class="image-field">{{mixins.imgSvg('smart')}}</div>
+						<p class="title-sm text-blue">УМНОЕ ПРЕДПРИЯТИЕ</p>
+					</div>
+					<ul>
+						<li><a href="#" title="Корпоративные приложения">Корпоративные приложения{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Данные и аналитика">Данные и аналитика{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Инфраструктура и облака">Инфраструктура и облака{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Совместная работа и BPM">Совместная работа и BPM{{mixins.icon('caret')}}</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<div class="image">
+						<div class="image-field">{{mixins.imgSvg('mobile')}}</div>
+						<p class="title-sm text-blue">ЦИФРОВАЯ ТРАНСФОРМАЦИЯ</p>
+					</div>
+					<ul>
+						<li><a href="#" title="Цифровые стратегии">Цифровые стратегии{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Электронная коммерция и ДБО">Электронная коммерция и ДБО{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Мобильные приложения">Мобильные приложения{{mixins.icon('caret')}}</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END .decree -->
+
+	<!-- BEGIN .cases -->
+	<section class="cases">
+		<div class="cases__slider-container">
+			<h2 class="title-semi-lg">Работаем со всеми сферами и отраслями</h2>
+			<div class="js-cases-slider cases__slider">
+				<div class="item"><a href="#" class="item__link" title="Банки и финансы">{{mixins.imgSvg('bank')}}Банки и финансы</a></div>
+				<div class="item"><a href="#" class="item__link" title="Страхование">{{mixins.imgSvg('security')}}Страхование</a></div>
+				<div class="item"><a href="#" class="item__link" title="Технологический сектор">{{mixins.imgSvg('technology-sector')}}Технологический сектор</a></div>
+				<div class="item"><a href="#" class="item__link" title="Розничная торговля и потребительские товары">{{mixins.imgSvg('shopping')}}Розничная торговля и потребительские товары</a></div>
+				<div class="item"><a href="#" class="item__link" title="Банки и финансы">{{mixins.imgSvg('bank')}}Банки и финансы</a></div>
+				<div class="item"><a href="#" class="item__link" title="Страхование">{{mixins.imgSvg('security')}}Страхование</a></div>
+			</div>
+		</div>
+
+		<div class="inner">
+			<div class="items">
+				<div class="item bg-blue" style="background-image: url('img/case-item.jpg');">
+					<div class="item__content">
+						<a href="#" class="text-shaped" title="ТЕХНОЛОГИЧЕСКИЙ СЕКТОР">ТЕХНОЛОГИЧЕСКИЙ СЕКТОР</a>
+						<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+						<a href="#" title="КАК ЭТО БЫЛО" class="btn btn_ghost btn_icon text-white"><span>КАК ЭТО БЫЛО</span>{{mixins.icon('arrow', 'arrow_white')}}</a>
+					</div>
+				</div>
+
+				<div class="item bg-green" style="background-image: url('img/case-item.jpg');">
+					<div class="item__content">
+						<a href="#" class="text-shaped" title="ТЕХНОЛОГИЧЕСКИЙ СЕКТОР">ТЕХНОЛОГИЧЕСКИЙ СЕКТОР</a>
+						<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+						<a href="#" title="СМОТРЕТЬ КЕЙС" class="btn btn_ghost btn_icon text-white"><span>СМОТРЕТЬ КЕЙС</span>{{mixins.icon('arrow', 'arrow_white')}}</a>
+					</div>
+				</div>
+
+				<div class="item bg-blue" style="background-image: url('img/case-item.jpg');">
+					<div class="item__content">
+						<a href="#" class="text-shaped" title="ТЕХНОЛОГИЧЕСКИЙ СЕКТОР">ТЕХНОЛОГИЧЕСКИЙ СЕКТОР</a>
+						<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+						<a href="#" title="ПОДРОБНЕЕ" class="btn btn_ghost btn_icon text-white"><span>ПОДРОБНЕЕ</span>{{mixins.icon('arrow', 'arrow_white')}}</a>
+					</div>
+				</div>
+
+				<div class="item bg-green" style="background-image: url('img/case-item.jpg');">
+					<div class="item__content">
+						<a href="#" class="text-shaped" title="ТЕХНОЛОГИЧЕСКИЙ СЕКТОР">ТЕХНОЛОГИЧЕСКИЙ СЕКТОР</a>
+						<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+						<a href="#" title="УЗНАТЬ БОЛЬШЕ" class="btn btn_ghost btn_icon text-white"><span>УЗНАТЬ БОЛЬШЕ</span>{{mixins.icon('arrow', 'arrow_white')}}</a>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="btn btn_primary" title="СМОРЕТЬ ВСЕ КЕЙСЫ">СМОРЕТЬ ВСЕ КЕЙСЫ</a>
+		</div>
+	</section>
+	<!-- END .cases -->
+
+	<!-- BEGIN .news -->
+	<section class="news">
+		<div class="inner">
+			<div class="news__title">
+				<h2 class="title-semi-lg">Новости и события</h2>
+				<a href="#" class="btn btn_ghost text-gray" title="СМОТРЕТЬ ВСЕ">СМОТРЕТЬ ВСЕ</a>
+			</div>
+		</div>
+
+		<div class="news__overlay">
+			<div class="js-news-slider news__slider">
+				<div class="item">
+					<div class="item__image" style="background-image: url('img/news-item-00.jpg');">
+						<a href="#" class="text-shaped" title="Пресс-релис">Пресс-релис</a>
+					</div>
+
+					<div class="item__content">
+						<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+						<div class="item__bottom">
+							<p class="item__date">20 марта</p>
+							<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="item__image" style="background-image: url('img/news-item-01.jpg');">
+						<a href="#" class="text-shaped" title="Пресс-релис">Пресс-релис</a>
+					</div>
+
+					<div class="item__content">
+						<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+						<div class="item__bottom">
+							<p class="item__date">20 марта</p>
+							<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="item__image" style="background-image: url('img/news-item-02.jpg');">
+						<a href="#" class="text-shaped" title="Пресс-релис">Пресс-релис</a>
+					</div>
+
+					<div class="item__content">
+						<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+						<div class="item__bottom">
+							<p class="item__date">20 марта</p>
+							<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="item__image" style="background-image: url('img/news-item-01.jpg');">
+						<a href="#" class="text-shaped" title="Пресс-релис">Пресс-релис</a>
+					</div>
+
+					<div class="item__content">
+						<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+						<div class="item__bottom">
+							<p class="item__date">20 марта</p>
+							<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="item__image" style="background-image: url('img/news-item-01.jpg');">
+						<a href="#" class="text-shaped" title="Пресс-релис">Пресс-релис</a>
+					</div>
+
+					<div class="item__content">
+						<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+						<div class="item__bottom">
+							<p class="item__date">20 марта</p>
+							<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="item__image" style="background-image: url('img/news-item-01.jpg');">
+						<a href="#" class="text-shaped" title="Пресс-релис">Пресс-релис</a>
+					</div>
+
+					<div class="item__content">
+						<p class="item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+						<div class="item__bottom">
+							<p class="item__date">20 марта</p>
+							<a href="#" class="item__link" title="Читать полностью">Читать полностью</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END .news -->
+</div>
+<!-- END .preview--container -->
+{% include "blocks/_question.html" %}
+{% endblock %}

@@ -1,0 +1,106 @@
+.development
+	padding: 52px 0 60.5px
+	+r(992)
+		padding: 39px 0 44.5px
+	.inner
+		+r(569)
+			padding: 0 8px
+	h2
+		margin-bottom: 18px
+		color: $black
+		letter-spacing: .02rem
+		+font-family($mont-bld)
+		font-size: 22px
+	.text-top
+		max-width: 860px
+		margin-bottom: 48px
+		+sm
+			margin-bottom: 36px
+		p
+			font-size: 15px
+			padding: 0
+	ul
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		+r(992)
+			flex-direction: column
+	ul li
+		width: 30%
+		max-width: 295px
+		+r(992)
+			max-width: 100%
+			width: 100%
+			&:not(:last-child)
+				margin-bottom: 36px
+		&:not(:last-child)
+			+sm
+				margin-bottom: 18px
+		h4
+			font-size: $text-md //16px
+			margin-bottom: 17.5px
+			padding-bottom: 13.5px
+			color: $blue
+			border-bottom: 3px solid $blue
+		p
+			font-size: 15px
+			padding-right: 16px
+			+r(1200)
+				padding-right: 0
+			+r(992)
+				padding-right: 52px
+
+.info
+	&__field
+		display: flex
+		flex-direction: row
+		margin-bottom: 46px
+		+r(992)
+			flex-direction: column
+	&__col
+		width: 100%
+		max-width: 50%
+		+r(992)
+			max-width: 100%
+		&:not(:last-child)
+			margin-right: 48.5px
+			+r(992)
+				margin-right: 0
+				margin-bottom: 32px
+		.title-semi-md
+			margin-bottom: 17.5px
+			padding-bottom: 13.5px
+			display: block
+			text-align: left
+			border-bottom: 3px solid $blue
+			+r(569)
+				border-bottom: none
+		ul
+			text-align: left
+		ul li
+			display: inline-block
+			vertical-align: top
+			width: 50%
+			+r(900)
+				width: 100%
+			+sm
+				max-width: 30%
+			+r(668)
+				max-width: 100%
+		ul li a
+			text-decoration: none
+			font-size: 16px
+			display: block
+			margin-bottom: 9px
+			color: $gray
+			&:hover
+				text-decoration: underline
+
+.development-page
+	.cases
+		padding-top: 52.5px
+		background-color: $search-bg
+	.cases .items
+		.item__content
+			p
+				max-width: 340px

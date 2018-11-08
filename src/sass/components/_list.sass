@@ -1,0 +1,164 @@
+.list
+	&-lang
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		width: 100%
+		max-width: 106px
+		margin-top: auto
+		margin-right: auto
+		margin-left: auto
+		padding-bottom: 4px
+		&.text-light li a
+			color: $white
+	&-lang li a
+		display: block
+		text-decoration: none
+		font-size: $text-sm //14px
+		color: $gray
+		+font-family($mont-bld)
+		letter-spacing: 0.020em
+		position: relative
+		&.is-current
+			&:after
+				content: ""
+				display: block
+				position: absolute
+				top: 100%
+				left: 50%
+				transform: translateX(-50%)
+				-webkit-transform: translateX(-50%)
+				-ms-transform: translateX(-50%)
+				-moz-transform: translateX(-50%)
+				-o-transform: translateX(-50%)
+				height: 4px
+				width: 36px
+				background-color: $gray
+	&-vertical
+		font-size: 0
+		li
+			display: block
+	&-social
+		font-size: 0
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		width: 100%
+		max-width: 144px
+		li .social__link
+			font-size: 16px
+			display: flex
+			align-items: center
+			width: 40px
+			height: 40px
+			border-radius: 50px
+			border: 2px solid $footer-bdr
+			justify-content: center
+			cursor: pointer
+			transition: border-color .24s ease-in-out
+			&:hover
+				border-color: lighten($footer-bdr, 61)
+		li .social__link svg
+			fill: $white
+			font-size: inherit
+	&-solution
+		li
+			display: block
+			margin-bottom: 9px
+		li a
+			cursor: pointer
+			text-decoration: none
+			font-size: $text-reg //15px
+			color: $gray
+			display: flex
+			justify-content: space-between
+			align-items: center
+			flex-direction: row
+			svg
+				fill: $search-icon
+				width: 5px
+				height: 8px
+			&:hover
+				text-decoration: underline
+	&-check
+		li
+			display: block
+			position: relative
+			padding-left: 24px
+			&:not(:last-child)
+				margin-bottom: 13px
+		li p
+			font-size: $text-reg //15px
+			+font-family($noto-reg)
+			color: $gray
+		li svg
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+			-moz-transform: translateY(-50%)
+			-ms-transform: translateY(-50%)
+			-o-transform: translateY(-50%)
+			left: 0
+			width: 13px
+			height: 10px
+			fill: $blue
+	&-dotted
+		flex-direction: column
+		display: flex
+		font-size: 15px
+		li
+			padding-left: 23px
+			position: relative
+			font-size: $text-reg //15px
+			+font-family($noto-bld)
+			color: $gray
+			margin-bottom: 4px
+			a
+				text-decoration: none
+				color: inherit
+			a:hover
+				text-decoration: underline
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				top: 5px
+				left: 0
+				width: 7px
+				height: 7px
+				border-radius: 50px
+				border: 2px solid transparent
+				background-color: $blue
+		li > .list-in
+			margin-top: 9px
+			li
+				margin-bottom: 9px
+				+font-family($noto-reg)
+				&:before
+					background-color: $white
+					border: 2px solid $blue
+		&.list-null
+			li:not(:last-child)
+				margin-bottom: 9px
+	&-circle
+		padding-left: 18px
+		+r(668)
+			padding-left: 4px
+		li
+			display: block
+			margin-bottom: 13px
+			padding-left: 24px
+			position: relative
+			&:before
+				display: block
+				position: absolute
+				top: 9px
+				left: 0
+				width: 7px
+				content: ''
+				height: 7px
+				border-radius: 50px
+				background-color: $blue
+		li p span
+			font-weight: bold

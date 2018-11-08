@@ -1,0 +1,163 @@
+---
+title: Вакансия - .NET developer
+mainClasses: vacancy-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview">
+	<div class="preview__wrapper bg-white">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs text-gray" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/career" class="breadcrumbs__link" itemprop="item" title="Карьера"><span itemprop="name">Карьера</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/vacancies" class="breadcrumbs__link" itemprop="item" title="Вакансии"><span itemprop="name">Вакансии</span></a>
+				<meta itemprop="position" content="3">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/vacancies-city" class="breadcrumbs__link" itemprop="item" title="Офис в Киеве"><span itemprop="name">Офис в Киеве</span></a>
+				<meta itemprop="position" content="4">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title=".NET developer">
+					<span itemprop="name">.NET developer</span>
+				</span>
+				<meta itemprop="position" content="5">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg text-blue" itemprop="title">.NET developer</h1>
+			<ul class="list-vacancy">
+				<li>1 года опыта</li>
+				<li><span itemprop="employmentType">Полный день</span></li>
+				<li>
+					<span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place">
+						<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+							<span itemprop="addressLocality">Киев,</span>
+							<span itemprop="addressRegion">Украина</span>
+						</span>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .vacancy -->
+<section class="vacancy" itemscope itemtype="http://schema.org/JobPosting">
+	<meta itemprop="specialCommitments" content="VeteranCommit" />
+	<div class="inner">
+		<p itemprop="description"><em><span itemprop="hiringOrganization" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Lorem ipsum dolor </span>sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span></em></p>
+
+		<div class="field">
+			<h3>Обязанности</h3>
+			<ul itemprop="responsibilities">
+				<li><p>Участие в разработке архитектуры системы и проектировании БД</p>{{mixins.icon('check')}}</li>
+				<li><p>Разработка новых систем и усовершенствование/оптимизация существующих</p>{{mixins.icon('check')}}</li>
+				<li><p>Работа в тесном взаимодействии с командой заказчика</p>{{mixins.icon('check')}}</li>
+			</ul>
+		</div>
+
+		<div class="field">
+			<h3>Требования</h3>
+			<ul itemprop="educationRequirements">
+				<li itemprop="skills"><p>Уверенное знание принципов ООП и основных шаблонов (паттернов) проектирования</p>{{mixins.icon('check')}}</li>
+				<li itemprop="skills"><p>Опыт работы в проектах в качестве ASP.NET/ASP.NET MVC разработчика</p>{{mixins.icon('check')}}</li>
+				<li itemprop="skills"><p>Знание HTML/CSS/JS/JQuery</p>{{mixins.icon('check')}}</li>
+				<li itemprop="skills"><p>Опыт работы с базой данных MS SQL (T-SQL — обязательно, оптимизация запросов — желательно)</p>{{mixins.icon('check')}}</li>
+				<li itemprop="skills"><p>Опыт работы в Agile команде</p>{{mixins.icon('check')}}</li>
+				<li itemprop="skills"><p>Английский язык на уровне Upper-Intermediate</p>{{mixins.icon('check')}}</li>
+			</ul>
+		</div>
+
+		<div class="field">
+			<h3>Будет плюсом</h3>
+			<ul>
+				<li><p>Опыт работы с применением подходов TDD/BDD</p>{{mixins.icon('plus')}}</li>
+				<li><p>Знание фрейморков Angular и Jasmine</p>{{mixins.icon('plus')}}</li>
+			</ul>
+		</div>
+
+		<div class="field">
+			<h3>Мы предлагаем</h3>
+			<ul>
+				<li><p><span itemprop="stimiveCompensation">Возможность участия в проектах по всему миру</span></p>{{mixins.icon('check')}}</li>
+				<li><p><span itemprop="stimiveCompensation">Обучение и возможность карьерного роста</span></p>{{mixins.icon('check')}}</li>
+				<li><p><span itemprop="stimiveCompensation">Поддержка семьи и забота о детях сотрудников</span></p>{{mixins.icon('check')}}</li>
+				<li><p><span itemprop="stimiveCompensation">Команда профессионалов-единомышленников</span></p>{{mixins.icon('check')}}</li>
+				<li><p><span itemprop="stimiveCompensation">Профессиональные и корпоративные мероприятия</span></p>{{mixins.icon('check')}}</li>
+				<li><p><span itemprop="stimiveCompensation">Спорт и медицинское обслуживание</span></p>{{mixins.icon('check')}}</li>
+				<li><p><span itemprop="stimiveCompensation">Бесплатные курсы английского языка</span></p>{{mixins.icon('check')}}</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<!-- END .vacancy -->
+
+<!-- BEGIN .register -->
+<section class="register">
+	<div class="inner">
+		<h2>Добро пожаловать в команду</h2>
+		<form action="/" class="form">
+			<div class="form__row">
+				<div class="form__field">
+					<input id="userName" type="text" class="input form__input" required="" placeholder="Афанасий">
+					<label for="userName" class="form__label">Имя:</label>
+				</div>
+
+				<div class="form__field">
+					<input id="userLastName" type="text" class="input form__input" required="" placeholder="Афанасий">
+					<label for="userLastName" class="form__label">Фамилия:</label>
+				</div>
+
+				<div class="form__field">
+					<input id="userCity" type="text" class="input form__input" required="" placeholder="Киев">
+					<label for="userCity" class="form__label">Город проживания:</label>
+				</div>
+			</div>
+
+			<div class="form__row">
+				<div class="form__field">
+					<input id="userPhone" type="tel" class="input form__input userPhone" required="" placeholder="">
+					<label for="userPhone" class="form__label">Телефон:</label>
+				</div>
+
+				<div class="form__field">
+					<input id="userEmail" type="email" class="input form__input" required="" placeholder="mail@example.com">
+					<label for="userEmail" class="form__label">Email:</label>
+				</div>
+
+				<div class="form__field">
+					<label for="input-file" class="label__hidden">
+						<div class="input__file">
+							<input type="file" id="input-file" class="input form__input" required="" placeholder="resume.pdf" accept=".pdf">
+						</div>
+						<input type="text" class="input" required="" placeholder="resume.pdf" disabled="">
+					</label>
+
+					<label for="input-file" class="form__label">Файл с резюме:</label>
+				</div>
+			</div>
+
+			<div class="form__field textarea_field">
+				<textarea  class="textarea" id="userLetter" rows="5" placeholder="Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus."></textarea>
+				<label for="userLetter" class="form__label">Сопроводительное письмо (не обязательно):</label>
+			</div>
+
+			<button class="btn btn_success btn_icon" type="submit"><span>ОТПРАВИТЬ РЕЗЮМЕ</span>{{mixins.icon('send')}}</button>
+		</form>
+	</div>
+</section>
+<!-- END .register -->
+{% endblock%}

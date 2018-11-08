@@ -1,0 +1,64 @@
+---
+title: Сотрудничество с вузами
+mainClasses: vuz-page
+formBg: bg-gray
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview" style="background-image: url('img/bg-preview-vuz.jpg');">
+	<div class="preview__wrapper">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/career" class="breadcrumbs__link" itemprop="item" title="Карьера"><span itemprop="name">Карьера</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Сотрудничество с вузами">
+					<span itemprop="name">Сотрудничество с вузами</span>
+				</span>
+				<meta itemprop="position" content="3">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg">Сотрудничество с вузами</h1>
+			<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .cooperation -->
+<section class="cooperation">
+	<div class="inner">
+		{% for item in range(0, 3) %}
+		<div class="cooperation__field">
+			<div class="col col_image">
+				<img src="img/vuz-00.jpg" class="mq_image" alt="university place image">
+				<img src="img/vuz-01.jpg" alt="university place image">
+			</div>
+
+			<div class="col col_text">
+				<h3>НТУУ «Киевский политехнический институт имени Игоря Сикорского»</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+				<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+				<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
+
+				<a href="training.html" class="btn_link" title="Тренинги в КПИ"><span>Тренинги в КПИ</span>{{mixins.icon('arrow')}}</a>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>
+<!-- END .cooperation -->
+
+{% include "blocks/_question.html" %}
+{% endblock %}

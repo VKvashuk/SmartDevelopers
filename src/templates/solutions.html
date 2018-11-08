@@ -1,0 +1,85 @@
+---
+title: Решения
+mainClasses: solutions-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview" style="background-image: url('img/bg-solutions.jpg');">
+	<div class="preview__wrapper">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Решения">
+					<span itemprop="name">Решения</span>
+				</span>
+				<meta itemprop="position" content="2">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg">Решения</h1>
+			<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .solutions -->
+<div class="solutions">
+	<div class="inner">
+		<div class="items">
+			<div class="items__field">
+				<div class="item">
+					<h3>Программное обеспечение</h3>
+					<ul>
+						<li><a href="#" title="Разработка"><span>Разработка</span>{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Тестирование и QA"><span>Тестирование и QA</span>{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Поддержка и развитие"><span>Поддержка и развитие</span>{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Интеграция"><span>Интеграция</span>{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Выделенные центры"><span>Выделенные центры</span>{{mixins.icon('caret')}}</a></li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<h3>Продвинутые технологии</h3>
+					<ul>
+						<li><a href="#" title="Agile"><span>Agile</span>{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Лаборатории инноваций"><span>Лаборатории инноваций</span>{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Интернет вещей (IoT)"><span>Интернет вещей (IoT)</span>{{mixins.icon('caret')}}</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="items__field">
+				<div class="item">
+					<h3>Умное предприятие</h3>
+					<ul>
+						<li><a href="#" title="Корпоративные приложения"><span>Корпоративные приложения</span>{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Данные и аналитика"><span>Данные и аналитика</span>{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Инфраструктура и облака"><span>Инфраструктура и облака</span>{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Совместная работа и BPM"><span>Совместная работа и BPM</span>{{mixins.icon('caret')}}</a></li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<h3>Цифровая трансформация</h3>
+					<ul>
+						<li><a href="#" title="Цифровые стратегии"><span>Цифровые стратегии</span>{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Электронная коммерция и ДБО"><span>Электронная коммерция и ДБО</span>{{mixins.icon('caret')}}</a></li>
+						<li><a href="#" title="Мобильные приложения"><span>Мобильные приложения</span>{{mixins.icon('caret')}}</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END .solutions -->
+{% include "blocks/_question.html" %}
+{% endblock%}

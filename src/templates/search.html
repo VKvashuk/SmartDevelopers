@@ -1,0 +1,81 @@
+---
+title: Результаты поиска
+mainClasses: search-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview">
+	<div class="preview__wrapper bg-white">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs text-gray" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.eu/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Результаты поиска">
+					<span itemprop="name">Результаты поиска</span>
+				</span>
+				<meta itemprop="position" content="2">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg text-blue">Результаты поиска:<span> поисковый запрос</span></h1>
+			<div class="search__form" itemscope itemtype="http://schema.org/WebSite">
+				<p>Найдено результатов: 12</p>
+
+				<link itemprop="url" href="smartdevelopers.eu"/>
+				<form action="/" class="form" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+					<meta itemprop="target" content="smartdevelopers.eu/?do=search&amp;searchstring={searchstring}">
+					<input type="hidden" name="do" value="search">
+					<div class="input__field">
+						<input type="search" itemprop="query-input" name="searchstring" autocomplete="off" class="input" placeholder="Поисковый запрос">
+						<button class="btn-search" type="submit">{{mixins.icon('search')}}</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .opening -->
+<div class="opening">
+	<div class="inner">
+		<div class="opening-wrapper no_shadow">
+			<div class="items">
+				{% for i in range(0, 12) %}
+				<div class="item">
+					<div class="item__container">
+						<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+
+						<div class="item__controls">
+							<a href="#" class="btn btn_primary btn_ghost" title="Читать полностью"><span>Читать полностью</span></a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+
+		<!-- BEGIN .pagination -->
+		<div class="pagination-container">
+			<ul class="pagination">
+				<li class="is-current"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li class="pagination__next"><a href="#" title="СЛЕДУЮЩАЯ"><span>СЛЕДУЮЩАЯ</span> {{mixins.icon('arrow')}}</a></li>
+			</ul>
+		</div>
+		<!-- END .pagination -->
+	</div>
+</div>
+<!-- END .opening -->
+{% include "blocks/_question.html" %}
+{% endblock%}

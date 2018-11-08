@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Вакансии</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body class="">
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- BEGIN .popup -->
+      <div class="popup js-popup popup_form" data-popup="sidebar">
+        <div class="popup__content js-popup-prevent">
+          <div class="popup__header">
+            <h2 class="title-semi-lg text-blue title-shaped">Что вам интересно?</h2> <button class="btn btn-close js-popup-control js-aside-control" data-popup="sidebar">
+<svg class="icon icon-close">
+	<use xlink:href="img/sprite.svg#icon-close"></use>
+</svg>
+</button>
+            <p>Просто напишите нам, и мы предоставим интересующую вас информацию</p>
+          </div>
+          <form action="/" class="form popup__form">
+            <div class="form__field"> <input type="text" id="userName" placeholder="Афанасий" class="input form__input" required=""> <label for="userName" class="form__label">Имя:</label> </div>
+            <div class="form__field"> <input type="tel" id="userPhone" name="cell_phone" class="input form__input userPhoneModal" placeholder="" required=""> <label for="userPhone" class="form__label">Телефон или email:</label> <span class="error-msg hide">Укажите корректный номер</span>              <span class="valid-msg hide">✓ Корректный номер</span> </div>
+            <div class="form__field"> <textarea cols="15" rows="5" id="userComment" class="textarea form__textarea" placeholder="Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus." required=""></textarea> <label for="userComment"
+                class="form__label">Вопрос или сообщение:</label> <button type="submit" class="btn btn_success btn_icon"><span>ОТПРАВИТЬ</span>
+<svg class="icon icon-send">
+	<use xlink:href="img/sprite.svg#icon-send"></use>
+</svg>
+</button> </div>
+          </form>
+        </div>
+      </div>
+      <!-- END .popup -->
+      <!-- BEGIN .sidebar -->
+      <aside class="sidebar js-sidebar">
+        <div class="sidebar__wrapper">
+          <div class="sidebar__header"> <a href="#" class="logo logo_sidebar">
+<img src="img/logo.svg" alt="icon logo" class="">
+</a> <button class="btn-close js-btn-close" type="button">
+<svg class="icon icon-close">
+	<use xlink:href="img/sprite.svg#icon-close"></use>
+</svg>
+</button> </div>
+          <div class="search" itemscope itemtype="http://schema.org/WebSite">
+            <meta itemprop="url" content="smartdevelopers.eu" />
+            <form action="/" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+              <meta itemprop="target" content="smartdevelopers.eu/?do=search&amp;searchstring={searchstring}"> <input type="hidden" name="do" value="search"> <input type="search" placeholder="Поиск по сайту" itemprop="query-input" name="searchstring" autocomplete="off"> <button type="submit">
+<svg class="icon icon-search">
+	<use xlink:href="img/sprite.svg#icon-search"></use>
+</svg>
+</button> </form>
+          </div>
+          <!-- BEGIN .nav -->
+          <nav class="nav">
+            <ul class="menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <li class="menu__item" itemprop="name"><a href="#" itemprop="url" title="О компании" class="menu__link">О компании 
+<svg class="icon icon-caret">
+	<use xlink:href="img/sprite.svg#icon-caret"></use>
+</svg>
+</a></li>
+              <li class="menu__item" itemprop="name"><a href="#" itemprop="url" title="Решения" class="menu__link js-nav-link" data-target="menu2">Решения 
+<svg class="icon icon-caret">
+	<use xlink:href="img/sprite.svg#icon-caret"></use>
+</svg>
+</a></li>
+              <li class="menu__item" itemprop="name"><a href="#" itemprop="url" title="Отрасли" class="menu__link">Отрасли 
+<svg class="icon icon-caret">
+	<use xlink:href="img/sprite.svg#icon-caret"></use>
+</svg>
+</a></li>
+              <li class="menu__item" itemprop="name"><a href="#" itemprop="url" title="Идеи и проекты" class="menu__link js-nav-link" data-target="menu4">Идеи и проекты 
+<svg class="icon icon-caret">
+	<use xlink:href="img/sprite.svg#icon-caret"></use>
+</svg>
+</a></li>
+              <li class="menu__item" itemprop="name"><a href="#" itemprop="url" title="Карьера" class="menu__link js-nav-link" data-target="menu5">Карьера 
+<svg class="icon icon-caret">
+	<use xlink:href="img/sprite.svg#icon-caret"></use>
+</svg>
+</a></li>
+              <li class="menu__item" itemprop="name"><a href="#" itemprop="url" title="Контакты" class="menu__link js-nav-link" data-target="menu6">Контакты 
+<svg class="icon icon-caret">
+	<use xlink:href="img/sprite.svg#icon-caret"></use>
+</svg>
+</a></li>
+            </ul>
+          </nav>
+          <!-- END .nav -->
+          <a href="#" class="btn btn_ghost btn_icon js-popup-control" data-popup="sidebar" title="НАПИСАТЬ">
+            <div>НАПИСАТЬ</div> <svg class="icon icon-send">
+	<use xlink:href="img/sprite.svg#icon-send"></use>
+</svg> </a>
+          <ul class="list-lang">
+            <li><a href="#" title="RU" itemprop="availableLanguage" itemscope itemtype="http://schema.org/Language" class="is-current"><span itemprop="name">RU</span></a></li>
+            <li><a href="#" title="EN" itemprop="availableLanguage" itemscope itemtype="http://schema.org/Language"><span itemprop="name">EN</span></a></li>
+            <li><a href="#" title="PL" itemprop="availableLanguage" itemscope itemtype="http://schema.org/Language"><span itemprop="name">PL</span></a></li>
+          </ul>
+        </div>
+      </aside>
+      <!-- END .sidebar -->
+      <div class="js-box box">
+        <div class="js-menu-section box__section" data-menu="menu2"> <button class="btn-prev js-btn-prev" type="button">
+<svg class="icon icon-arrow">
+	<use xlink:href="img/sprite.svg#icon-arrow"></use>
+</svg>
+</button>
+          <div class="box__heading"> <img src="img/bullet.svg" alt="icon bullet" class=""> </div>
+          <p class="box__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. quidem excepturi, perferendis eos.</p>
+          <ul class="menu menu_in">
+            <li><a title="Программное обеспечение" href="software.html">Программное обеспечение</a></li>
+            <li><a title="Продвинутые технологии" href="technologies.html">Продвинутые технологии</a></li>
+            <li><a title="Умное предприятие" href="smart-company.html">Умное предприятие</a></li>
+            <li><a title="Цифровая трансформация" href="digital-transformation.html">Цифровая трансформация</a></li>
+          </ul>
+        </div>
+        <div class="js-menu-section box__section" data-menu="menu4"> <button class="btn-prev js-btn-prev" type="button">
+<svg class="icon icon-arrow">
+	<use xlink:href="img/sprite.svg#icon-arrow"></use>
+</svg>
+</button>
+          <div class="box__heading"> <img src="img/bullet.svg" alt="icon bullet" class=""> </div>
+          <p class="box__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. quidem excepturi, perferendis eos.</p>
+          <ul class="menu menu_in">
+            <li><a title="Программное обеспечение" href="software.html">Программное обеспечение</a></li>
+            <li><a title="Продвинутые технологии" href="technologies.html">Продвинутые технологии</a></li>
+            <li><a title="Умное предприятие" href="smart-company.html">Умное предприятие</a></li>
+            <li><a title="Цифровая трансформация" href="digital-transformation.html">Цифровая трансформация</a></li>
+          </ul>
+        </div>
+        <div class="js-menu-section box__section" data-menu="menu5"> <button class="btn-prev js-btn-prev" type="button">
+<svg class="icon icon-arrow">
+	<use xlink:href="img/sprite.svg#icon-arrow"></use>
+</svg>
+</button>
+          <div class="box__heading"> <img src="img/bullet.svg" alt="icon bullet" class=""> </div>
+          <p class="box__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. quidem excepturi, perferendis eos.</p>
+          <ul class="menu menu_in">
+            <li><a title="Вакансии" href="vacancies.html">Вакансии</a></li>
+            <li><a title="Тренинги" href="trainings.html">Тренинги</a></li>
+            <li><a title="Сотрудничество с вузами" href="vuz.html">Сотрудничество с вузами</a></li>
+            <li><a title="Отправить резюме" href="resume.html">Отправить резюме</a></li>
+          </ul>
+        </div>
+        <div class="js-menu-section box__section" data-menu="menu6"> <button class="btn-prev js-btn-prev" type="button">
+<svg class="icon icon-arrow">
+	<use xlink:href="img/sprite.svg#icon-arrow"></use>
+</svg>
+</button>
+          <div class="box__heading"> <img src="img/bullet.svg" alt="icon bullet" class=""> </div>
+          <p class="box__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. quidem excepturi, perferendis eos.</p>
+          <ul class="menu menu_in">
+            <li><a title="Программное обеспечение" href="software.html">Программное обеспечение</a></li>
+            <li><a title="Продвинутые технологии" href="technologies.html">Продвинутые технологии</a></li>
+            <li><a title="Умное предприятие" href="smart-company.html">Умное предприятие</a></li>
+            <li><a title="Цифровая трансформация" href="digital-transformation.html">Цифровая трансформация</a></li>
+          </ul>
+        </div>
+      </div>
+      <script type='application/ld+json'>
+        {
+          "@context": "https:\/\/schema.org",
+          "@type": "Organization",
+          "url": "https:\/\/www.smartdevelopers.eu\/",
+          "sameAs": [],
+          "@id": "https:\/\/www.smartdevelopers.eu\/#organization",
+          "name": "SmartDevelopers",
+          "logo": "www.smartdevelopers.eu/img/logo.svg"
+        }
+
+      </script>
+      <!-- BEGIN .header -->
+      <header class="header"> <button class="btn-burger js-btn-nav" type="button">
+<svg class="icon icon-burger">
+	<use xlink:href="img/sprite.svg#icon-burger"></use>
+</svg>
+</button> <a href="#" class="logo logo_heading">
+<svg class="icon icon-logo">
+	<use xlink:href="img/sprite.svg#icon-logo"></use>
+</svg>
+</a>
+        <div class="header__search"> <a class="btn btn_ghost js-popup-control" href="#" data-popup="sidebar" title="Написать"><span>Написать</span></a> </div> <button type="button" class="js-search-btn search__btn" title="поиск">
+<svg class="icon icon-search">
+	<use xlink:href="img/sprite.svg#icon-search"></use>
+</svg>
+</button>
+        <div class="header__search-wrapper js-search-wrapper">
+          <meta itemprop="url" content="smartdevelopers.eu" />
+          <div class="search" itemscope itemtype="http://schema.org/WebSite">
+            <form action="/" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+              <meta itemprop="target" content="smartdevelopers.com.ua/?do=search&amp;searchstring={searchstring}"> <input type="hidden" name="do" value="search">
+              <div class="search__field"> <input type="search" itemprop="query-input" name="searchstring" placeholder="Поиск по сайту" autofocus="autofocus" autocomplete="off"> </div>
+            </form>
+          </div>
+        </div>
+      </header>
+      <!-- END .header -->
+      <!-- BEGIN vacancies-page  -->
+      <main class="main vacancies-page">
+        <!-- BEGIN .preview -->
+        <section class="preview" style="background-image: url('img/bg-preview-vacancies.jpg');">
+          <div class="preview__wrapper">
+            <!-- BEGIN .breadcrumbs -->
+            <ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem"> <a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+                <meta itemprop="position" content="1"> </li>
+              <li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem"> <a href="http://smartdevelopers.com.ua/career" class="breadcrumbs__link" itemprop="item" title="Карьера"><span itemprop="name">Карьера</span></a>
+                <meta itemprop="position" content="2"> </li>
+              <li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem"> <span itemprop="item" class="breadcrumbs__link" title="Вакансии">
+					<span itemprop="name">Вакансии</span> </span>
+                <meta itemprop="position" content="3"> </li>
+            </ul>
+            <!-- END .breadcrumbs -->
+            <div class="preview__wrapper-text preview_small">
+              <h1 class="title-lg">Вакансии</h1>
+              <p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            </div>
+          </div>
+        </section>
+        <!-- END .preview -->
+        <!-- BEGIN .opening -->
+        <div class="opening">
+          <div class="inner">
+            <div class="opening-wrapper">
+              <div class="opening__title">
+                <h2 class="title-semi-lg">Офис в Киеве</h2>
+                <div class="opening__right">
+                  <div class="select-wrapper"> <select class="js-select">
+							
+							<option value="">Направление</option>
+							
+							<option value="">Направление</option>
+							
+							<option value="">Направление</option>
+							
+							<option value="">Направление</option>
+							
+						</select> </div>
+                  <div class="count">12 ВАКАНСИЙ</div>
+                </div>
+              </div>
+              <div class="items">
+                <div class="item" itemscope itemtype="http://schema.org/JobPosting">
+                  <meta itemprop="specialCommitments" content="VeteranCommit" />
+                  <h3 class="title-semi-md" itemprop="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                  <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                  <div class="item__controls">
+                    <div class="item__controls-link"> <a href="#" title="ОПЫТ: ОТ 1 ГОДА">ОПЫТ: ОТ 1 ГОДА</a> <a href="#" title="ПОЛНЫЙ ДЕНЬ"><span itemprop="employmentType">ПОЛНЫЙ ДЕНЬ</span></a> </div> <a href="#" class="btn btn_primary" title="ОТПРАВИТЬ РЕЗЮМЕ"><span>ОТПРАВИТЬ РЕЗЮМЕ</span></a>                    </div>
+                </div>
+                <div class="item" itemscope itemtype="http://schema.org/JobPosting">
+                  <meta itemprop="specialCommitments" content="VeteranCommit" />
+                  <h3 class="title-semi-md" itemprop="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                  <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                  <div class="item__controls">
+                    <div class="item__controls-link"> <a href="#" title="ОПЫТ: ОТ 1 ГОДА">ОПЫТ: ОТ 1 ГОДА</a> <a href="#" title="ПОЛНЫЙ ДЕНЬ"><span itemprop="employmentType">ПОЛНЫЙ ДЕНЬ</span></a> </div> <a href="#" class="btn btn_primary" title="ОТПРАВИТЬ РЕЗЮМЕ"><span>ОТПРАВИТЬ РЕЗЮМЕ</span></a>                    </div>
+                </div>
+                <div class="item" itemscope itemtype="http://schema.org/JobPosting">
+                  <meta itemprop="specialCommitments" content="VeteranCommit" />
+                  <h3 class="title-semi-md" itemprop="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                  <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                  <div class="item__controls">
+                    <div class="item__controls-link"> <a href="#" title="ОПЫТ: ОТ 1 ГОДА">ОПЫТ: ОТ 1 ГОДА</a> <a href="#" title="ПОЛНЫЙ ДЕНЬ"><span itemprop="employmentType">ПОЛНЫЙ ДЕНЬ</span></a> </div> <a href="#" class="btn btn_primary" title="ОТПРАВИТЬ РЕЗЮМЕ"><span>ОТПРАВИТЬ РЕЗЮМЕ</span></a>                    </div>
+                </div> <a href="#" class="link-justify" title="Смотреть все"><span>Смотреть все</span> 
+<svg class="icon icon-arrow">
+	<use xlink:href="img/sprite.svg#icon-arrow"></use>
+</svg>
+</a> </div>
+            </div>
+            <div class="opening-wrapper">
+              <div class="opening__title">
+                <h2 class="title-semi-lg">Офис в Киеве</h2>
+                <div class="opening__right">
+                  <div class="select-wrapper"> <select class="js-select">
+							
+							<option value="">Направление</option>
+							
+							<option value="">Направление</option>
+							
+							<option value="">Направление</option>
+							
+							<option value="">Направление</option>
+							
+						</select> </div>
+                  <div class="count">12 ВАКАНСИЙ</div>
+                </div>
+              </div>
+              <div class="items">
+                <div class="item" itemscope itemtype="http://schema.org/JobPosting">
+                  <meta itemprop="specialCommitments" content="VeteranCommit" />
+                  <h3 class="title-semi-md" itemprop="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                  <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                  <div class="item__controls">
+                    <div class="item__controls-link"> <a href="#" title="ОПЫТ: ОТ 1 ГОДА">ОПЫТ: ОТ 1 ГОДА</a> <a href="#" title="ПОЛНЫЙ ДЕНЬ"><span itemprop="employmentType">ПОЛНЫЙ ДЕНЬ</span></a> </div> <a href="#" class="btn btn_primary" title="ОТПРАВИТЬ РЕЗЮМЕ"><span>ОТПРАВИТЬ РЕЗЮМЕ</span></a>                    </div>
+                </div>
+                <div class="item" itemscope itemtype="http://schema.org/JobPosting">
+                  <meta itemprop="specialCommitments" content="VeteranCommit" />
+                  <h3 class="title-semi-md" itemprop="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                  <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                  <div class="item__controls">
+                    <div class="item__controls-link"> <a href="#" title="ОПЫТ: ОТ 1 ГОДА">ОПЫТ: ОТ 1 ГОДА</a> <a href="#" title="ПОЛНЫЙ ДЕНЬ"><span itemprop="employmentType">ПОЛНЫЙ ДЕНЬ</span></a> </div> <a href="#" class="btn btn_primary" title="ОТПРАВИТЬ РЕЗЮМЕ"><span>ОТПРАВИТЬ РЕЗЮМЕ</span></a>                    </div>
+                </div>
+                <div class="item" itemscope itemtype="http://schema.org/JobPosting">
+                  <meta itemprop="specialCommitments" content="VeteranCommit" />
+                  <h3 class="title-semi-md" itemprop="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                  <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                  <div class="item__controls">
+                    <div class="item__controls-link"> <a href="#" title="ОПЫТ: ОТ 1 ГОДА">ОПЫТ: ОТ 1 ГОДА</a> <a href="#" title="ПОЛНЫЙ ДЕНЬ"><span itemprop="employmentType">ПОЛНЫЙ ДЕНЬ</span></a> </div> <a href="#" class="btn btn_primary" title="ОТПРАВИТЬ РЕЗЮМЕ"><span>ОТПРАВИТЬ РЕЗЮМЕ</span></a>                    </div>
+                </div> <a href="#" class="link-justify" title="Смотреть все"><span>Смотреть все</span> 
+<svg class="icon icon-arrow">
+	<use xlink:href="img/sprite.svg#icon-arrow"></use>
+</svg>
+</a> </div>
+            </div>
+          </div>
+        </div>
+        <!-- END .opening -->
+        <!-- BEGIN .question -->
+        <section class="question ">
+          <div class="inner">
+            <div class="question-block1">
+              <h2>Есть вопросы?</h2>
+              <p>Просто напишите нам, и мы предоставим интересующую вас информацию</p>
+              <p class="question-phone"> или просто звоните <br><a href="tel:+380999999999"> +380999999999</a></p>
+            </div>
+            <div class="question-block2">
+              <div class="question-name"> <label><span class="question__label">Имя:</span> <br><input type="text" placeholder="Афанасий"> </label> </div>
+              <div class="question-number"> <label><span class="question__label">Телефон или email:</span> <br>
+					<input type="text" name="cell_phone" placeholder="" class="input userPhone" required="">
+					<!-- <span class="error-msg hide">Укажите корректный номер</span> -->
+					<!-- <span class="valid-msg hide">✓ Корректный номер</span> -->
+				</label> </div>
+              <div class="question-text"> <label><span class="question__label"> Вопрос или сообщение: </span><br>
+					<textarea placeholder="Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.Aenean vulputate eleifend tellus."></textarea>
+				</label> </div> <button class="btn btn_success btn_icon"><span>ОТПРАВИТЬ</span> 
+<svg class="icon icon-send">
+	<use xlink:href="img/sprite.svg#icon-send"></use>
+</svg>
+</button> </div>
+          </div>
+        </section>
+        <!-- END .question -->
+      </main>
+      <!-- END vacancies-page  -->
+    </div>
+    <!-- BEGIN .footer -->
+    <footer class="footer">
+      <div class="footer__center">
+        <div class="footer__in">
+          <div class="footer__col media-sm">
+            <div class="footer__field"> <a href="about.html" class="title-sm" title="О КОМПАНИИ">О КОМПАНИИ</a>
+              <ul class="list-vertical">
+                <li><a href="leadership.html" title="Руководство">Руководство</a></li>
+                <li><a href="news.html" title="Новости и события">Новости и события</a></li>
+                <li><a href="#" title="Инвесторам">Инвесторам</a></li>
+                <li><a href="contacts.html" title="Контакты">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__field"> <a href="solutions.html" class="title-sm" title="РЕШЕНИЯ">РЕШЕНИЯ</a>
+              <ul class="list-vertical">
+                <li><a href="software.html" title="Программное обеспечение">Программное обеспечение</a></li>
+                <li><a href="technologies.html" title="Продвинутые технологии">Продвинутые технологии</a></li>
+                <li><a href="smart-company.html" title="Умное предприятие">Умное предприятие</a></li>
+                <li><a href="digital-transformation.html" title="Цифровая трансформация">Цифровая трансформация</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__field mr-0"> <a href="career.html" class="title-sm" title="КАРЬЕРА">КАРЬЕРА</a>
+              <ul class="list-vertical">
+                <li><a href="vacancies.html" title="Вакансии">Вакансии</a></li>
+                <li><a href="trainings.html" title="Тренинги">Тренинги</a></li>
+                <li><a href="vuz.html" title="Сотрудничество с вузами">Сотрудничество с вузами</a></li>
+                <li><a href="resume.html" title="Отправить резюме">Отправить резюме</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-box">
+            <ul class="list-lang text-light">
+              <li><a href="#" title="RU" itemprop="availableLanguage" itemscope itemtype="http://schema.org/Language"><span itemprop="name">RU</span></a></li>
+              <li><a href="#" title="EN" itemprop="availableLanguage" itemscope itemtype="http://schema.org/Language"><span itemprop="name">EN</span></a></li>
+              <li><a href="#" title="PL" itemprop="availableLanguage" itemscope itemtype="http://schema.org/Language"><span itemprop="name">PL</span></a></li>
+            </ul> <a href="#" class="logo logo_footer" title="SmartDevelopers company Logo Image">
+<svg class="icon icon-logo">
+	<use xlink:href="img/sprite.svg#icon-logo"></use>
+</svg>
+</a>
+            <ul class="list-social">
+              <li><span class="social__link" data-link="https://www.facebook.com/smartdevelopers" title="facebook">
+<svg class="icon icon-facebook">
+	<use xlink:href="img/sprite.svg#icon-facebook"></use>
+</svg>
+</a></li>
+					<li><span class="social__link" data-link="https://www.twitter.com/smartdevelopers" title="twitter">
+<svg class="icon icon-twitter">
+	<use xlink:href="img/sprite.svg#icon-twitter"></use>
+</svg>
+</a></li>
+					<li><span class="social__link" data-link="https://www.linkedin.com/smartdevelopers" title="linkedin">
+<svg class="icon icon-linkedin">
+	<use xlink:href="img/sprite.svg#icon-linkedin"></use>
+</svg>
+</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__bottom">
+		<p class="copyright">© Copyright  2018 SmartDevelopers</p>
+		<div class="links">
+			<a href="privacy-policy.html" title="Privacy Policy">Privacy Policy</a>
+			<a href="sitemap.html" title="Sitemap">Sitemap</a>
+		</div>
+	</div>
+</footer>
+<!-- END .footer -->
+  <!-- END content -->
+
+  <!-- BEGIN Javascript: Main -->
+  <script src="lib/jquery-3.3.1.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- BEGIN Javascript: Libs -->
+  <script src="lib/intlTelInput.min.js"></script>
+  <script src="lib/jquery.mask.min.js"></script>
+  <script src="lib/svg4everybody.min.js"></script>
+  <script src="lib/perfect-scrollbar.min.js"></script>
+  <script src="lib/slick.min.js"></script>
+</body>
+</html>

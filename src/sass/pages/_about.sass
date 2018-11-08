@@ -1,0 +1,209 @@
+.about
+	display: flex
+	justify-content: space-between
+	margin-top: 4px
+	+r(1279)
+		flex-direction: column
+		width: 100%
+	&-item
+		position: relative
+		width: 33.07%
+		img
+			object-fit: cover
+			width: 100%
+			height: 100%
+		+r(1279)
+			width: 100%
+			height: 340px
+			margin-bottom: 4px
+	&-text
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		font-size: 15px;
+		color: $white
+		padding-left: 24px
+		padding-right: 24px
+		padding-bottom: 28px
+		min-height: 156px;
+		+r(1279)
+			min-height: 126px;
+		& h3
+			font-size: 24px
+			font-weight: 700
+			margin-bottom: 18px
+			+r(1279)
+				margin-bottom: 32px
+			+r(766)
+				margin-bottom: 18px
+		& li
+			+r(1279)
+				width: auto
+				display: inline-block
+				padding-right: 35px;
+			+r(766)
+				width: 100%
+				padding-right: 0px;
+		& li a
+			display: block
+			width: 100%
+			line-height: 1.6
+			position: relative
+			text-decoration: none
+			color: $white
+			+r(1279)
+				width: auto
+				display: inline-block
+				padding-right: 35px
+			+r(766)
+				width: 100%
+		.icon-caret
+			position: absolute
+			right: 0px
+			width: 7.41px
+			fill: #CED4DA
+			top: 6px
+			transition: fill .24s ease-in-out
+
+
+.question
+	&__label
+		padding-left: 25px
+	.inner
+		display: flex
+		justify-content: space-between
+		padding-top: 61px
+		padding-bottom: 89px
+		margin: 0 auto
+		max-width: 1032px
+		&::after
+			content: none
+		+r(1279)
+			flex-direction: column
+			align-items: center
+			padding-bottom: 64px
+			padding-top: 46px
+			padding-left: 16px
+			padding-right: 16px
+		+r(766)
+				padding: 37px 16px 48px 16px
+	&.bg-gray
+		background-color: $search-bg
+	&-block1
+		max-width: 315px
+		padding-top: 29px
+		+r(1279)
+			max-width: 399px
+			text-align: center
+		& h2
+			font-size: 32px
+			font-weight: 700
+			color: $blue
+			+font-family($mont-bld)
+			margin-bottom: 36px
+			position: relative
+			+r(766)
+				font-size: 20px
+			&:before
+				position: absolute
+				content: ""
+				background: #DEE2E6
+				width: 64px
+				height: 4px
+				bottom: -16px
+				left: 0
+				+r(1279)
+					left: 0
+					right: 0
+					margin: auto
+		& p
+			color: #495057
+			+font-family($noto-reg)
+			+r(1279)
+				margin-bottom: 36px
+			&.question-phone
+				color: #000
+				margin-top: 36px
+				+font-family($mont-bld)
+				+r(1279)
+					display: none
+				& a
+					font-size: 24px
+					text-decoration: none
+					color: #000
+	&-block2
+		max-width: 524px
+		label
+			color: #868E96
+			+font-family($noto-reg)
+			display: block
+			margin-bottom: 20px
+		input
+			font-size: $text-reg
+			color: $gray
+			padding:   10px 23px
+			box-shadow: 0 1px 3px rgba($black, .16)
+			border-radius: 30px
+			display: block
+			+font-family($noto-reg)
+			margin-top: 5px
+			border: 1px solid transparent
+			transition: box-shadow .24s ease-in-out, border-color .24s ease-in-out
+			&::placeholder
+				color: $gray
+			&:hover
+				box-shadow: 0 3px 6px rgba($black, .16)
+			&:focus
+				border-color: $blue
+			+r(766)
+				width: 100%
+		& .btn
+			background: #37B24D
+			margin-top: 32px
+			color: $white
+			+font-family($mont-bld)
+			text-align: left
+			font-size: 14px
+			height: 44px
+			svg
+				fill: $white
+			+r(1279)
+				text-align: left
+				margin: 0 auto
+				margin-top: 32px
+	&-name
+		margin-right: 24px
+		+r(668)
+			margin-right: 0
+	&-name,
+	&-number
+		display: inline-block
+		+r(766)
+				width: 100%
+	& textarea
+		width: 100%
+		min-height: 120px
+		border-radius: 22px
+		padding: 18px 24px
+		border: 1px solid $white
+		box-shadow: 0 1px 3px rgba($black, .16)
+		margin-top: 14px
+		resize: none
+		transition: box-shadow .24s ease-in-out, border-color .24s ease-in-out
+		&:hover
+			box-shadow: 0 3px 6px rgba($black, .16)
+		&:focus
+			border-color: $blue
+		+placeholder-color($gray)
+		+placeholder
+			+font-family($noto-reg)
+			font-size: 15px
+.preview__wrapper
+    padding-bottom: 35px
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+---
+title: 404 - Упс... Страница не найдена
+mainClasses: error-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .ups -->
+<section class="ups">
+	<div class="ups__container">
+		<div class="ups__col col-l" itemscope itemtype="http://schema.org/WebSite">
+			<h2 class="title-lg text-blue">Упс...</h2>
+			<p>Страница не найдена</p>
+			<form action="/" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+				<meta itemprop="url" content="smartdevelopers.eu"/>
+				<meta itemprop="target" content="smartdevelopers.eu/?do=search&amp;searchstring={searchstring}">
+				<input type="hidden" name="do" value="search">
+
+				<div class="input-icon">
+					<input type="search" placeholder="Поиск по сайту" class="input"  itemprop="query-input" name="searchstring" autocomplete="off">
+					<button class="btn-search" type="submit">{{mixins.icon('search')}}</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="ups__col">
+			<div class="ups__image">{{mixins.imgSvg('planet-04')}}</div>
+		</div>
+	</div>
+</section>
+<!-- END .ups -->
+{% endblock %}

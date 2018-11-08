@@ -1,0 +1,135 @@
+---
+title: Карта сайта
+mainClasses: sitemap-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview">
+	<div class="preview__wrapper bg-white">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs text-gray" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Карта сайта">
+					<span itemprop="name">Карта сайта</span>
+				</span>
+				<meta itemprop="position" content="2">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg text-mute">Карта сайта</h1>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .sitemap -->
+<section class="sitemap">
+	<div class="inner">
+		<div class="cols">
+			<div class="col">
+				<h3 class="title-semi-md"><a href="about.html" title="О компании">О компании</a></h3>
+				<ul class="list-dotted">
+					<li>
+						<a href="company.html" title="Компания">Компания</a>
+						<ul class="list-in">
+							<li><a href="#" title="Руководство">Руководство</a></li>
+							<li><a href="#" title="SmartDevelopers Ukraine">SmartDevelopers Ukraine</a></li>
+							<li><a href="#" title="SmartDevelopers Polland">SmartDevelopers Polland</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="Новости и события">Новости и события</a>
+						<ul class="list-in">
+							<li><a href="#" title="Новости компании">Новости компании</a></li>
+							<li><a href="#" title="События">События</a></li>
+							<li><a href="#" title="СМИ о нас">СМИ о нас</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="Инвесторам">Инвесторам</a>
+					</li>
+				</ul>
+
+				<h3 class="title-semi-md mt-1x">Идеи и проекты</h3>
+				<h3 class="title-semi-md">Карьера</h3>
+				<ul class="list-dotted list-null">
+					<li><a href="#" title="Вакансии">Вакансии</a></li>
+					<li><a href="#" title="Тренинги">Тренинги</a></li>
+					<li><a href="#" title="Сотрудничество с вузами">Сотрудничество с вузами</a></li>
+					<li><a href="#" title="Отправить резюме">Отправить резюме</a></li>
+				</ul>
+			</div>
+
+			<div class="col">
+				<h3 class="title-semi-md"><a href="solutions.html" title="Решения">Решения</a></h3>
+				<ul class="list-dotted">
+					<li>
+						<a href="software.html" title="Программное обеспечение">Программное обеспечение</a>
+						<ul class="list-in">
+							<li><a href="development.html">Разработка</a></li>
+							<li><a href="#" title="Тестирование и QA">Тестирование и QA</a></li>
+							<li><a href="#" title="Поддержка и развитие">Поддержка и развитие</a></li>
+							<li><a href="#" title="Интеграция">Интеграция</a></li>
+							<li><a href="#" title="Выделенные центры">Выделенные центры</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#" title="Продвинутые технологии">Продвинутые технологии</a>
+						<ul class="list-in">
+							<li><a href="#" title="Agile">Agile</a></li>
+							<li><a href="#" title="Лаборатории инноваций">Лаборатории инноваций</a></li>
+							<li><a href="#" title="Интернет вещей (IoT)">Интернет вещей (IoT)</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#" title="Умное предприятие">Умное предприятие</a>
+						<ul class="list-in">
+							<li><a href="#" title="Корпоративные приложения">Корпоративные приложения</a></li>
+							<li><a href="#" title="Данные и аналитика">Данные и аналитика</a></li>
+							<li><a href="#" title="Инфраструктура и облака">Инфраструктура и облака</a></li>
+							<li><a href="#" title="Совместная работа и BPM">Совместная работа и BPM</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#" title="Цифровая трансформация">Цифровая трансформация</a>
+						<ul class="list-in">
+							<li><a href="#" title="Цифровые стратегии">Цифровые стратегии</a></li>
+							<li><a href="#" title="Электронная коммерция и ДБО">Электронная коммерция и ДБО</a></li>
+							<li><a href="#" title="Мобильные приложения">Мобильные приложения</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col">
+				<h3 class="title-semi-md"><a href="industries.html" title="Отрасли">Отрасли</a></h3>
+				<ul class="list-dotted list-null">
+					<li><a href="#" title="Банки и финансы">Банки и финансы</a></li>
+					<li><a href="#" title="Страхование">Страхование</a></li>
+					<li><a href="#" title="Технологический сектор">Технологический сектор</a></li>
+					<li><a href="#" title="Розничная торговля и потребительские товары">Розничная торговля и потребительские товары</a></li>
+					<li><a href="#" title="Путешествия">Путешествия</a></li>
+					<li><a href="#" title="Топливно-энергетический комплекс">Топливно-энергетический комплекс</a></li>
+					<li><a href="#" title="Медиа и развлечения">Медиа и развлечения</a></li>
+					<li><a href="#" title="Медицина и биотехнологии">Медицина и биотехнологии</a></li>
+					<li><a href="#" title="Формирующиеся рынки">Формирующиеся рынки</a></li>
+					<li><a href="#" title="Информационный бизнес, обучение online">Информационный бизнес, обучение online</a></li>
+				</ul>
+				<h3 class="title-semi-md mt-1x"><a href="contacts.html" title="Контакты">Контакты</a></h3>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END .sitemap -->
+{% endblock %}

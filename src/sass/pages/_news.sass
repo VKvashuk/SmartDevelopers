@@ -1,0 +1,220 @@
+.news
+	&-page .preview
+		border-bottom: 1px solid $gray-bdr
+		&__wrapper
+			padding-bottom: 44px
+			+r(668)
+				padding: 0 16px 10px
+			&-text
+				padding-top: 104px
+				+r(668)
+					padding-top: 35px
+	&.news_white
+		background-color: $white
+	&-page
+		.tabs
+			.item
+				max-width: initial
+				width: 48.5%
+				+r(992)
+					width: 80%
+				+r(900)
+					width: 90%
+				+sm
+					width: 100%
+					max-width: 49%
+				+r(668)
+					max-width: 80%
+				+r(569)
+					max-width: 100%
+				&:not(:last-child)
+					margin-right: 0
+					+r(992)
+						margin-bottom: 24px
+					+sm
+						margin-bottom: 0
+					+r(668)
+						margin-right: 0
+						margin-bottom: 16px
+		.tabs .tabs__field
+			&.tabs_large
+				.item
+					width: 100%
+					border: none
+					+r(992)
+						max-width: 80%
+					+r(900)
+						max-width: 90%
+					+sm
+						max-width: 100%
+					+r(668)
+						max-width: 80%
+						position: relative
+					+r(568)
+						max-width: 100% !important
+					&__image
+						+r(992)
+							height: 374px
+						+r(668)
+							height: 225px
+					&__image,
+					&__content
+						max-width: 50%
+						display: inline-block
+						vertical-align: top
+						height: 100%
+						width: 100%
+						+r(992)
+							display: block
+							max-width: 100%
+						+sm
+							display: inline-block
+							vertical-align: top
+							max-width: 50%
+						+r(668)
+							display: block
+							max-width: 100%
+					&__content
+						padding: 20px 24px
+						.shape-green
+							+r(668)
+								position: absolute
+								top: 16px
+								left: 16px
+						+r(668)
+							padding: 18px 24px 20px
+					&__desc
+						font-size: $text-reg
+						color: $gray
+						padding-bottom: 24px
+						+r(992)
+							display: none
+					&__text
+						font-size: 22px
+						color: $black
+						margin: 15px auto
+						padding-bottom: 0
+						letter-spacing: 0.02rem
+						line-height: 1.36
+						+sm
+							padding-right: 0
+							margin: 43px auto
+						+r(668)
+							margin: 0 auto 18px
+							font-size: $text-md //16px
+	&_tab
+		padding-top: 34px
+		padding-bottom: 63px
+		position: relative
+		+r(668)
+			padding-bottom: 24px
+		.pagination-container
+			max-width: 900px
+			margin: 48px auto 0
+			+r(992)
+				margin-left: auto
+				margin-right: auto
+				text-align: center
+			+r(668)
+				margin: 24px auto 0
+			+r(569)
+				max-width: 280px
+			.pagination
+				max-width: 437px
+		.inner
+			+r(668)
+				padding: 0 8px
+		.tabs
+			max-width: 900px
+			margin: 0 auto
+			&__caption
+				+r(992)
+					margin: 0 auto
+			&__content
+				width: 100%
+			&__field
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				+r(992)
+					flex-direction: column
+					align-items: center
+				+sm
+					flex-direction: row
+					&:not(:last-child)
+						margin-bottom: 16px
+				&:not(:last-child)
+					margin-bottom: 24px
+				+r(668)
+					flex-direction: column
+					&:not(:last-child)
+						margin-bottom: 16px
+
+.tabs
+	&__content
+		display: none
+		justify-content: space-between
+		flex-direction: column
+		&.is-active
+			display: inline-flex
+	&__caption-wrapper
+		z-index: 10
+		position: relative
+		top: -72px
+		left: 50%
+		transform: translateX(-50%)
+		margin-bottom: -37px
+		+scrollbar
+			background-color: rgba(255,255,255,0)
+			max-height: 3px
+			height: 3px
+			cursor: pointer
+		+scrollbar-track
+			background-color: $gray-bdr
+		+scrollbar-thumb
+			border-radius: 10px
+			max-height: 4px
+			height: 4px
+			background-color: rgba($gray, .16)
+		+scrollbar-track-piece
+			background-color: rgba(255,255,255,0)
+		+r(530)
+			overflow-x: scroll
+			overflow-y: hidden
+			padding-bottom: 4px
+	&__caption
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		max-width: 462px
+		min-width: 462px
+		width: 100%
+	&__item
+		display: inline-block
+		vertical-align: top
+		position: relative
+		&:after
+			transform: translateX(-50%) scaleX(0)
+			transition: transform .24s ease-in-out, opacity .24s ease-in-out
+			content: ''
+			display: block
+			opacity: 0
+			position: absolute
+			top: 100%
+			height: 4px
+			left: 50%
+			width: 100%
+			background-color: $blue
+		&.is-active
+			&:after
+				transform: translateX(-50%) scaleX(1)
+				opacity: 1
+			.tabs__trigger
+				cursor: default
+	&__trigger
+		font-size: $text-sm //14px
+		color: $gray
+		padding: 0 20px 14px 20px
+		text-decoration: none
+		display: block
+		cursor: pointer

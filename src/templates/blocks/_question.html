@@ -1,0 +1,30 @@
+<!-- BEGIN .question -->
+<section class="question {{formBg}}">
+	<div class="inner">
+		<div class="question-block1">
+			<h2>Есть вопросы?</h2>
+			<p>Просто напишите нам, и мы предоставим интересующую вас информацию</p>
+			<p class="question-phone"> или просто звоните <br><a href="tel:+380999999999"> +380999999999</a></p>
+		</div>
+		<div class="question-block2">
+			<div class="question-name">
+				<label><span class="question__label">Имя:</span> <br><input type="text" placeholder="Афанасий"> </label>
+			</div>
+
+			<div class="question-number">
+				<label><span class="question__label">Телефон или email:</span> <br>
+					<input type="text" name="cell_phone" placeholder="" class="input userPhone" required="">
+					<!-- <span class="error-msg hide">Укажите корректный номер</span> -->
+					<!-- <span class="valid-msg hide">✓ Корректный номер</span> -->
+				</label>
+			</div>
+			<div class="question-text">
+				<label><span class="question__label"> Вопрос или сообщение: </span><br>
+					<textarea placeholder="Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.Aenean vulputate eleifend tellus."></textarea>
+				</label>
+			</div>
+			<button class="btn btn_success btn_icon"><span>ОТПРАВИТЬ</span> {{mixins.icon('send', 'send_white')}}</button>
+		</div>
+	</div>
+</section>
+<!-- END .question -->

@@ -1,0 +1,130 @@
+---
+title: Компания
+mainClasses: company-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!--BEGIN .preview -->
+<section class="preview" style="background-image: url('img/bg-company@2x.jpg');">
+	<div class="preview__wrapper">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/about" class="breadcrumbs__link" itemprop="item" title="О компании"><span itemprop="name">О компании</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Компания">
+					<span itemprop="name">Компания</span>
+				</span>
+				<meta itemprop="position" content="3">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg">Компания</h1>
+			<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<section class="progress">
+	<ul class="progress-items">
+		<li class="progress-item">
+			<p class="progress-number">54</p>
+			<h3>Lorem ipsum dolor </h3>
+			<p class="progress-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo dolor.</p>
+		</li>
+		<li class="progress-item">
+			<p class="progress-number">99</p>
+			<h3>Lorem ipsum dolor </h3>
+			<p class="progress-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo dolor.</p>
+		</li>
+		<li class="progress-item">
+			<p class="progress-number">99</p>
+			<h3>Lorem ipsum dolor </h3>
+			<p class="progress-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo dolor.</p>
+		</li>
+	</ul>
+	<div class="progress-wrapper">
+		<div class="progress-text">
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+				Aenean commodo ligula eget dolor. Aenean massa. Cum
+			sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+			<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. </p>
+		</div>
+		<div class="progress-text">
+			<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+			<p>Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. </p>
+		</div>
+	</div>
+</section>
+<!-- END .progress -->
+
+<section class="company">
+	<div class="inner">
+		<h2 class="title-semi-lg company-title">Делали проекты для:</h2>
+		<ul class="company-items">
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+			<li class="company-item">
+			</li>
+		</ul>
+
+	</div>
+</section>
+<!-- END .company -->
+
+<section class="industry">
+	<div class="inner">
+		<h2 class="title-semi-lg industry-title">Работаем со всеми сферами и отраслями</h2>
+		<ul class="industry-items">
+			<li class="industry-item">{{mixins.icon('bank-building')}} <p>Банки и финансы</p></li>
+			<li class="industry-item">{{mixins.icon('insurance')}}<p>Страхование</p></li>
+			<li class="industry-item">{{mixins.icon('chip')}}<p>Технологический сектор</p></li>
+			<li class="industry-item">{{mixins.icon('milk')}}<p>Розничная торговля и потребительские товары</p></li>
+			<li class="industry-item">{{mixins.icon('travels')}}<p>Путешествия</p></li>
+			<li class="industry-item">{{mixins.icon('energy')}}<p>Топливно-энергетический комплекс</p></li>
+			<li class="industry-item">{{mixins.icon('gamepad')}}<p>Медиа и развлечения</p></li>
+			<li class="industry-item">{{mixins.icon('medicine')}}<p>Медицина и биотехнологии</p></li>
+			<li class="industry-item">{{mixins.icon('laboratory')}}<p>Формирующиеся рынки</p></li>
+			<li class="industry-item">{{mixins.icon('engagement')}}<p>Информационный бизнес, обучение Online</p></li>
+		</ul>
+		<p class="industry-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+	</div>
+</section>
+<!-- END .industry -->
+{% include "blocks/_question.html" %}
+{% endblock %}

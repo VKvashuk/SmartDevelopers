@@ -1,0 +1,86 @@
+---
+title: Вакансии в офис в Киеве
+mainClasses: vacancies-city-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview" style="background-image: url('img/bg-preview-vacancies-city.jpg');">
+	<div class="preview__wrapper">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/career" class="breadcrumbs__link" itemprop="item" title="Карьера"><span itemprop="name">Карьера</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/vacancies" class="breadcrumbs__link" itemprop="item" title="Вакансии"><span itemprop="name">Вакансии</span></a>
+				<meta itemprop="position" content="3">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Офис в Киеве">
+					<span itemprop="name">Офис в Киеве</span>
+				</span>
+				<meta itemprop="position" content="4">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text preview_small">
+			<h1 class="title-lg">Вакансии в офис в Киеве</h1>
+			<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .opening -->
+<div class="opening">
+	<div class="inner tabs tabs_white tabs_noshadow">
+		<div class="tabs__caption-wrapper">
+			<ul class="tabs__caption">
+				<li class="tabs__item is-active"><a href="#" class="tabs__trigger" title="Все">Все</a></li>
+				<li class="tabs__item"><a href="#" class="tabs__trigger" title="UX и дизайн">UX и дизайн</a></li>
+				<li class="tabs__item"><a href="#" class="tabs__trigger" title="Продажи, маркетинг, PR">Продажи, маркетинг, PR</a></li>
+				<li class="tabs__item"><a href="#" class="tabs__trigger" title="Разработка">Разработка</a></li>
+			</ul>
+
+			<a class="count" href="#" title="12 ТРЕНИНГОВ">12 ТРЕНИНГОВ</a>
+		</div>
+
+		{% for item in range(0, 4) %}
+		<div class="tabs__content{% if loop.index == 1 %}is-active{% endif %}">
+			<div class="opening-wrapper">
+				<div class="items">
+					{% for item in range(0, 7) %}
+					<div class="item" itemscope itemtype="http://schema.org/JobPosting">
+						<meta itemprop="specialCommitments" content="VeteranCommit" />
+						<h3 class="title-semi-md" itemprop="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+						<p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+
+						<div class="item__controls">
+							<div class="item__controls-link">
+								<a href="#" title="ОПЫТ: ОТ 1 ГОДА">ОПЫТ: ОТ 1 ГОДА</a>
+								<a href="#" title="ПОЛНЫЙ ДЕНЬ"><span itemprop="employmentType">ПОЛНЫЙ ДЕНЬ</span></a>
+							</div>
+
+							<a href="#" class="btn btn_primary" title="ОТПРАВИТЬ РЕЗЮМЕ"><span>ОТПРАВИТЬ РЕЗЮМЕ</span></a>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- END .opening-wrapper -->
+		</div>
+		<!-- END .tabs__content -->
+		{% endfor %}
+	</div>
+</div>
+<!-- END .opening -->
+{% include "blocks/_question.html" %}
+{% endblock%}

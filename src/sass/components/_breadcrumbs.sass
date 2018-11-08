@@ -1,0 +1,37 @@
+.breadcrumbs
+	font-size: 0
+	display: inline-block
+	margin-top: 60px
+	+r(569)
+		display: none
+	&.text-gray .breadcrumbs__link
+		color: $gray
+		&:after
+			background-image: url('../img/caret-gray.svg')
+	&__item
+		display: inline-block
+		&:last-child
+			cursor: default
+		&:last-child .breadcrumbs__link:after
+			display: none
+		&:not(:last-child) .breadcrumbs__link
+			margin-right: 15.44px
+			padding-right: 15.6px
+	&__link
+		color: $white
+		text-decoration: none
+		font-size: $text-sm //14px
+		line-height: 1.71
+		+font-family($noto-reg)
+		position: relative
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 100%
+			background-image: url('../img/caret.svg')
+			width: 4.94px
+			height: 8px
+			+cover

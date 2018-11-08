@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .a,.b,.c,.d,.e{fill:none;stroke-miterlimit:10;stroke-width:2px}.a,.c{stroke:#495057}.b,.d{stroke:#1c7ed6}.c,.d,.e{stroke-linejoin:round}.e{stroke:#2f9e44}
+        </style>
+    </defs>
+    <path class="a" d="M1 1h62v62H1z"/>
+    <path class="a" d="M1 9h62"/>
+    <path class="a" d="M4 5h2"/>
+    <path class="a" d="M8 5h2"/>
+    <path class="a" d="M12 5h2"/>
+    <path class="a" d="M17 1v8"/>
+    <path class="a" d="M20 5h40"/>
+    <path class="a" d="M5 13h54v46H5z"/>
+    <path class="a" d="M17 17v38"/>
+    <path class="b" d="M9 18h5"/>
+    <path class="a" d="M9 22h8"/>
+    <path class="a" d="M12 26h2"/>
+    <path class="a" d="M12 30h2"/>
+    <path class="a" d="M9 34h8"/>
+    <path class="a" d="M12 42h2"/>
+    <path class="b" d="M12 38h2"/>
+    <path class="a" d="M12 46h2"/>
+    <path class="a" d="M12 50h2"/>
+    <path class="c" d="M21 32h34"/>
+    <path class="c" d="M22 32v-8"/>
+    <path class="c" d="M26 32v-6"/>
+    <path class="c" d="M34 32v-4"/>
+    <path class="c" d="M38 32v-8"/>
+    <path class="c" d="M42 32v-4"/>
+    <path class="c" d="M46 32v-8"/>
+    <path class="c" d="M50 32v-4"/>
+    <path class="c" d="M54 32v-6"/>
+    <path class="c" d="M30 32V22"/>
+    <path class="d" d="M22 36h5v5h-5z"/>
+    <path class="c" d="M31 36h5v5h-5z"/>
+    <path class="e" d="M40 36h5v5h-5z"/>
+    <path class="c" d="M49 36h5v5h-5z"/>
+    <path class="e" d="M45 18h10"/>
+    <path class="e" d="M43 18h-4"/>
+    <path class="d" d="M21 45h7"/>
+    <path class="d" d="M21 49h7"/>
+    <path class="c" d="M30 45h7"/>
+    <path class="c" d="M30 49h7"/>
+    <path class="e" d="M39 45h7"/>
+    <path class="e" d="M39 49h7"/>
+    <path class="c" d="M48 45h7"/>
+    <path class="c" d="M48 49h7"/>
+</svg>

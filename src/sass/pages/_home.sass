@@ -1,0 +1,292 @@
+.home
+	.preview
+		&__wrapper
+			padding: 197px 0 64px 48px
+			+sm
+				text-align: center
+				padding-top: 200px
+				padding-left: 0
+			+r(668)
+				padding-top: 117px
+				padding-bottom: 32px
+			&:before
+				background-color: rgba($header-bgc, .85)
+			&-text
+				margin-bottom: 60px
+				+sm
+					padding: 0 48px
+		.btn
+			display: inline-flex
+			font-size: $text-xs //13px
+			+font-family($mont-semibld)
+			text-transform: uppercase
+			&_ghost
+				margin-right: 16px
+				color: $white
+				+r(570)
+					margin: 0 auto 16px
+					display: flex
+				&:hover
+					color: darken($gray, 10)
+	.title-semi-lg
+		margin-bottom: 40px
+
+.decree
+	padding: 46px 0
+	.inner
+		+r(569)
+			padding: 0 8px
+	+sm
+		text-align: center
+	+r(668)
+		padding: 38px 0
+	.title-semi-lg
+		+r(668)
+			font-size: 20px
+			margin-bottom: 27px
+	.columns
+		padding: 15.5px 0
+		border: 1px solid $gray-bdr
+		border-radius: 8px
+		display: flex
+		justify-content: space-between
+		width: 100%
+		flex-direction: row
+		position: relative
+		.crest
+			display: none
+			+r(1024)
+				display: block
+			+r(668)
+				display: none
+			&:before,
+			&:after
+				content: ""
+				display: block
+				top: 50%
+				left: 50%
+				position: absolute
+				transform: translate(-50%, -50%)
+				background-color: $gray-bdr
+			&:before
+				height: 96%
+				width: 1px
+			&:after
+				width: 96%
+				height: 1px
+		+md
+			flex-wrap: wrap
+			padding: 0
+		.col
+			padding: 0 16px
+			text-align: left
+			+md
+				width: 50%
+				padding: 46px
+			ul
+				+r(992)
+					margin-bottom: 20px
+				+r(668)
+					margin-bottom: 0
+			+r(992)
+				padding: 20px
+			+r(668)
+				width: 100%
+				padding: 32px
+				&:not(:last-child)
+					position: relative
+					&:after
+						position: absolute
+						bottom: 0
+						width: calc(100% - 32px)
+						height: 1px
+						content: ''
+						background-color: $gray-bdr
+						left: 50%
+						transform: translateX(-50%)
+			&:not(:last-child)
+				border-right: 1px solid $gray-bdr
+				+md
+					border-right: none
+			.title-sm
+				margin: 20px 0
+				text-transform: uppercase
+				+md
+					margin: 18px auto 0
+					display: inline-block
+					width: 50%
+			.image
+				text-align: center
+				+clr
+				+md
+					text-align: left
+				&-field
+					width: 62px
+					height: 62px
+					margin: 0 auto 19px
+					+md
+						float: left
+						margin-bottom: 25px
+						margin-right: 24px
+		.col ul li
+			&:not(:last-child)
+				margin-bottom: 9px
+			a
+				font-size: $text-reg //15px
+				color: $gray
+				line-height: 1.6
+				text-decoration: none
+				display: block
+				+clr
+				padding-right: 18px
+				position: relative
+			a .icon
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				fill: $search-icon
+				right: 0
+				width: 5px
+				height: 8px
+
+.cases
+	text-align: center
+	padding-bottom: 63.5px
+	.title-semi-lg
+		text-align: left
+		+r(992)
+			text-align: center
+		+r(569)
+			margin-bottom: 27px
+	.inner
+		+r(569)
+			padding: 0 8px
+	&__slider
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			right: 0
+			width: 48px
+			height: 100%
+			top: 0
+			background-image: linear-gradient(to left, $white, rgba($white, 0))
+		&-container
+			padding-left: 48px
+			text-align: left
+			padding-bottom: 48px
+			+r(569)
+				padding-left: 8px
+			.title-semi-lg
+				+r(992)
+					font-size: 32px
+				+sm
+					font-size: 20px
+		.item
+			display: inline-block
+			padding-right: 8px
+		.item__link
+			display: block
+			text-decoration: none
+			font-size: $text-sm //14px
+			color: $gray
+			text-align: center
+			+font-family($mont-bld)
+			background-color: $gray-bdr
+			border-radius: 50px
+			padding: 12px 47px 12px 60px
+			position: relative
+			img
+				vertical-align: middle
+				margin-right: 16px
+				position: absolute
+				left: 20px
+				top: 50%
+				transform: translateY(-50%)
+				width: 24px
+				height: 24px
+				fill: $blue
+	.btn_primary
+		margin: 0 auto
+	.items
+		font-size: 0
+		justify-content: space-between
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		padding-bottom: 16px
+		.item
+			width: 100%
+			max-width: 49%
+			box-sizing: border-box
+			margin-bottom: 16px
+			+cover
+			border-radius: 8px
+			text-align: left
+			overflow: hidden
+			+r(992)
+				max-width: 100%
+				text-align: center
+				padding: 68px
+			+xs
+				padding: 60px 30px
+			&.bg-blue,
+			&.bg-green
+				position: relative
+				&:before
+					content: ""
+					display: block
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+			&.bg-green
+				&:before
+					background-color: rgba($green-darken, .90)
+			&.bg-blue
+				&:not(:first-child)
+					order: 1
+					+r(992)
+						order: 0
+				&:before
+					background-color: rgba($blue-second, .90)
+		.item__content
+			width: 100%
+			height: 100%
+			padding: 16px
+			+clr
+			position: relative
+			z-index: 10
+			+r(992)
+				padding: 0
+			.text-shaped
+				background-color: rgba($black, .20)
+				float: right
+				display: inline-block
+				+r(992)
+					float: none
+			.text-md
+				font-size: 22px
+				+font-family($mont-bld)
+				letter-spacing: 0.02em
+				line-height: 1.36
+				display: inline-block
+				margin-top: 43px
+				margin-bottom: 26px
+				+r(992)
+					margin-top: 31px
+					margin-bottom: 26px
+				+r(569)
+					font-size: 18px
+					margin-bottom: 29px
+					margin-top: 25px
+			.btn
+				margin-bottom: 55px
+				+r(992)
+					margin: 0 auto
+				&:hover
+					color: darken($white, 30)
+					svg
+						fill: darken($white, 30)
+

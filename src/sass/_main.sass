@@ -1,0 +1,353 @@
+main
+	padding-left: 254px
+	font-size: 0
+	+clr
+	+sm
+		padding-left: 0
+
+
+p
+	+font-family($noto-reg)
+	font-size: $text-reg //15px
+	color: $gray
+	line-height: 1.6
+
+// Posts
+.post-content
+	max-width: 1280px
+	padding: 0 48px
+	margin: 0 auto
+	+clr
+	+r(668)
+		padding: 0 16px
+	small em
+		font-family: "Georgia"
+		font-style: italic
+		font-size: 17px
+		color: $search-icon
+		display: block
+		margin-top: 12px
+		+r(660)
+			font-size: 15px
+	p
+		font-size: 15px
+		&:not(:first-child)
+			margin-top: 24px
+		+r(660)
+			margin-top: 9px
+			margin-bottom: 24px
+	p strong
+		font-weight: bold
+	h1,h2, h3, h4, h5, h6
+		letter-spacing: 0.02rem
+		+font-family($mont-bld)
+	h3
+		font-size: 22px
+		margin-top: 48px
+		+r(660)
+				font-size: 18px
+				margin-top: 33px
+	a
+		color: $blue
+	ul
+		font-size: 15px
+		margin-top: 36px
+		margin-bottom: 44px
+		+r(660)
+			margin-top: 0
+			margin-bottom: 25px
+		li
+			margin-bottom: 10px
+			padding-left: 40px
+			position: relative
+			line-height: 1.6
+			&:before
+				content: ""
+				position: absolute
+				width: 7px
+				height: 7px
+				border-radius: 50%
+				background: $blue
+				top: 9px
+				left: 17px
+	img
+		width: 100%
+	ol
+		font-size: 15px
+		margin-top: 0px
+		margin-bottom: 60px
+		counter-reset: myCounter
+		max-width: 862px
+		+r(660)
+				margin-bottom: 48px
+		li
+			margin-bottom: 13px
+			margin-left: 39px
+			list-style: none
+			line-height: 1.6
+			position: relative
+			&:before
+				counter-increment: myCounter
+				content: counter(myCounter) "."
+				display: inline-block
+				text-align: center
+				color: $blue
+				font-size: 16px
+				font-weight: 700
+				font-family: $mont-bld
+				position: absolute
+				left: -32px
+
+.post-table
+	padding: 0 48px
+	margin: 46px auto 0
+	overflow: auto
+	max-width: 1280px
+	position: relative
+	+r(600)
+		margin-top: 6px
+		&:before
+			content: ""
+			position: absolute
+			width: 16px
+			height: 100%
+			background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+			right: 0
+			top: 0
+	table
+		min-width: 535px
+		tr
+			&:nth-child(odd)
+				background: #F8F9FA
+			&:nth-child(1)
+				border-bottom: 3px solid #2C93E9
+				background-color: $white
+		td
+			padding: 0 16px
+			height: 40px
+			line-height: 2.9
+			border-bottom: 1px solid #E9ECEF
+			&:nth-child(1)
+				width: 40%
+				+r(800)
+					width: 38%
+				+r(540)
+					width: 34%
+			&:nth-child(2)
+				width: 35%
+				+r(800)
+					width: 33%
+				+r(540)
+					width: 30%
+	tr
+		font-size: 15px
+	th
+		text-align: left
+		padding-left: 16px
+		padding-bottom: 5px
+
+.post-text-top
+	padding: 0 48px
+	margin: 0 auto
+	max-width: 1280px
+	+r(668)
+		padding: 0 16px
+	p
+		font-family: "Georgia"
+		font-style: italic
+		font-size: 22px
+		margin-top: 56px
+		margin-bottom: 36px
+		+r(660)
+			font-size: 18px
+
+.progress
+	max-width: 1280px
+	margin: 0 auto
+	+clr
+	padding: 0 48px
+	+r(668)
+		padding: 0 16px
+	p:not(:last-child)
+		margin-bottom: 24px
+	h2
+		margin-bottom: 32px
+		letter-spacing: 0.02rem
+		+font-family($mont-bld)
+		color: $gray
+		font-size: 32px
+		+r(660)
+			font-size: 20px
+			margin-bottom: 15px
+	&-wrapper > div
+		width: 44%
+		+r(668)
+			width: 100%
+.quote
+	max-width: 1280px
+	margin: 0 auto
+	+clr
+	padding: 0 48px
+	+r(668)
+		padding: 0 16px
+	p em
+			font-size: 20px
+			font-family: "Georgia", Arial, sans-serif
+			font-style: italic
+			display: block
+			margin-bottom: 20px
+			+r(660)
+					font-size: 18px
+	&-wrapper
+		border-top: 3px solid #2C93E9
+		border-bottom: 3px solid #2C93E9
+		padding: 40px 47px
+		margin-top: 66px
+		margin-bottom: 58px
+		+r(660)
+				padding: 16px 25px
+				margin-top: 46px
+				margin-bottom: 40px
+
+.privacy
+	h1,h2, h3, h4, h5, h6
+		letter-spacing: 0.02rem
+		+font-family($mont-bld)
+	h2
+		font-size: 32px
+		letter-spacing: .02rem
+		color: $gray
+		margin-bottom: 32px
+		+r(668)
+			font-size: 20px
+			margin-bottom: 18px
+	h3
+		margin-bottom: 18px
+		color: $black
+		font-size: 22px
+		+r(668)
+			font-size: 18px
+			margin-bottom: 12px
+	p:not(:last-child)
+		margin-bottom: 32px
+	ul
+		padding-left: 18px
+		+r(668)
+			padding-left: 4px
+		li
+			display: block
+			margin-bottom: 13px
+			padding-left: 24px
+			position: relative
+			&:before
+				display: block
+				position: absolute
+				top: 9px
+				left: 0
+				width: 7px
+				content: ''
+				height: 7px
+				border-radius: 50px
+				background-color: $blue
+		li p
+			+font-family($noto-reg)
+		li p span
+				+font-family($noto-bld)
+				margin-right: 12px
+
+// vuz
+.cooperation
+	h3
+		margin-bottom: 24px
+		letter-spacing: .02rem
+		font-size: 22px
+		+font-family($mont-bld)
+		color: $black
+	p
+		margin-bottom: 24px
+	.btn_link
+		color: $blue
+		text-decoration: none
+		+font-family($mont-bld)
+		font-size: 16px
+		display: flex
+		justify-content: space-between
+		flex-direction: row
+		width: 180px
+		svg
+			fill: $blue
+			width: 16px
+			height: 21px
+
+// leadership
+.leadership
+	&-text
+		padding-left: 32px
+		+r(605)
+			padding-left: 0px
+		h2
+			color: $blue
+			font-size: 22px
+			font-family: $mont-bld
+			margin-bottom: 13px
+			+r(605)
+				font-size: 18px
+		p
+			color: $search-icon
+			+font-family($mont-semibld)
+			font-size: 13px
+			letter-spacing: 0.05rem
+		div
+			margin-top: 38px
+		div p
+			font-size: 15px
+			+font-family($mont-reg)
+			letter-spacing: normal
+			color: $gray
+			line-height: 1.6
+			&:not(:first-child)
+				margin-top: 24px
+
+// scope
+.scope
+	padding: 12px 48px 42px
+	+r(668)
+		padding: 12px 16px 42px
+	ul
+		margin-bottom: 0
+		width: 50%
+		display: inline-block
+		vertical-align: top
+		&:last-child
+			float: right
+		+r(992)
+			width: 100%
+			&:not(:last-child)
+				margin-bottom: 9px
+		+sm
+			max-width: 48%
+		+r(668)
+			max-width: 100%
+		li
+			display: block
+			position: relative
+			padding-left: 24px
+			&:not(:last-child)
+				margin-bottom: 13px
+		li p
+			font-size: $text-reg //15px
+			+font-family($noto-reg)
+			color: $gray
+		li svg
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 0
+			width: 13px
+			height: 10px
+			fill: $blue
+	h3
+		color: $black
+		padding-bottom: 18.5px
+		border-bottom: 3px solid $blue
+		margin-bottom: 20.5px

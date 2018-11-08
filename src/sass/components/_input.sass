@@ -1,0 +1,65 @@
+input[type='search']
+	&::-webkit-search-decoration,
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-results-button,
+	&::-webkit-search-results-decoration
+		display: none
+
+.input
+	height: 44px
+	padding: 12px 24px
+	border-radius: 50px
+	&.error
+		border-color: $redd
+	&.valid
+		border-color: $green
+
+.error-msg,
+.valid-msg
+	font-size: 15px
+	margin-top: 10px
+	margin-left: 24px
+	&.hide
+		display: none
+.error-msg
+	color: $redd
+.valid-msg
+	color: $green
+
+.textarea
+	padding: 18px 24px 34px
+	resize: none
+	border-radius: 20px
+
+.input,
+.textarea
+	border: 1px solid rgba(255, 255, 255, 0)
+	outline: none
+	background-color: $white
+	box-shadow: 0 1px 3px rgba($black, .16)
+	transition: box-shadow .24s ease-in-out
+	color: $gray
+	+font-family($noto-reg)
+	-webkit-transition: box-shadow .24s ease-in-out, border-color .24s ease-in-out
+	-moz-transition: box-shadow .24s ease-in-out, border-color .24s ease-in-out
+	-ms-transition: box-shadow .24s ease-in-out, border-color .24s ease-in-out
+	-o-transition: box-shadow .24s ease-in-out, border-color .24s ease-in-out
+	+placeholder-color($gray)
+	&:focus,
+	&:active,
+	&.focus,
+	&.active
+		outline: none
+		border-color: $blue
+		box-shadow: none
+		+ .form__label
+			color: darken($gray, 20)
+	&:hover
+		box-shadow: 0 3px 6px rgba($black, .16)
+
+
+.intl-tel-input .country-list .country.highlight,
+.intl-tel-input.allow-dropdown .flag-container:hover .selected-flag
+	&:hover
+		background-color: transparent
+

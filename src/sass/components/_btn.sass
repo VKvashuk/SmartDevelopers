@@ -1,0 +1,133 @@
+.btn
+	cursor: pointer
+	text-decoration: none
+	outline: none
+	border-radius: 50px
+	padding: 0 22px
+	width: 250px
+	height: 44px
+	align-items: center
+	text-align: center
+	justify-content: center
+	transition: background-color .24s ease-in-out, box-shadow .24s ease-in-out
+	display: flex
+	min-height: 44px
+	text-shadow: 0 1px 1px rgba(#000000, .16)
+	position: relative
+	font-size: $text-xs //13px
+	&.text-white
+		color: $white
+		text-shadow: none
+	&.btn_icon
+		justify-content: space-between
+	&.btn_ghost
+		border: 2px solid $gray-btn-bdr
+		+font-family($mont-semibld)
+		font-size: $text-sm //13px
+		letter-spacing: .5px
+		color: $blue-second
+		&:hover
+			background-color: $gray-btn-hover
+		&.text-white
+			color: $white
+			text-shadow: none
+			svg
+				fill: $white
+		&.text-gray
+			color: $gray
+			text-shadow: none
+			text-align: center
+	&.btn_primary,
+	&.btn_success
+		border: 2px solid transparent
+		+font-family($mont-bld)
+		font-size: $text-sm //14px
+		color: $white
+		box-shadow: 0 3px 6px rgba(#000000, .16)
+		&:hover
+			box-shadow: 0 4px 10px rgba(#000000, .24)
+		.icon-send
+			fill: $white
+	&.btn_primary
+		background-color: $blue
+		&:hover
+			background-color: $blue-btn-hover
+		&.btn_ghost
+			background-color: transparent
+			border-color: $blue
+			color: $gray
+	&.btn_success
+		background-color: $green
+		&:hover
+			background-color: $green-btn-hover
+	&-prev
+		background-color: transparent
+		cursor: pointer
+		border: none
+		position: absolute
+		top: 0
+		left: 16px
+		display: none
+		+sm
+			display: block
+		&:focus
+			outline: none
+		svg
+			transform: rotateZ(-180deg)
+			-webkit-transform: rotateZ(-180deg)
+			-o-transform: rotateZ(-180deg)
+			-ms-transform: rotateZ(-180deg)
+			-moz-transform: rotateZ(-180deg)
+			fill: $white
+	&-close
+		display: none
+		background-color: transparent
+		border: none
+		outline: none
+		width: 24px
+		height: 24px
+		padding: 20px
+		position: relative
+		top: -14px
+		left: 14px
+		svg
+			fill: $gray
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			-webkit-transform: translate(-50%, -50%)
+			-ms-transform: translate(-50%, -50%)
+			-o-transform: translate(-50%, -50%)
+			-moz-transform: translate(-50%, -50%)
+		&:focus
+			outline: none
+		+sm
+			display: inline-block
+	&-burger
+		background-color: transparent
+		border: none
+		width: 60px
+		height: 16px
+		z-index: 10
+		top: 50%
+		left: 0
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		-ms-transform: translateY(-50%)
+		-o-transform: translateY(-50%)
+		-moz-transform: translateY(-50%)
+		height: 100%
+		position: absolute
+		outline: none
+		cursor: pointer
+		svg
+			width: 20px
+			height: 20px
+			fill: $gray
+		+r(481)
+			float: left
+			margin-right: 0
+		&:focus
+			outline: none
+

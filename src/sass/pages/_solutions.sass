@@ -1,0 +1,124 @@
+.solutions
+	padding-top: 52px
+	+r(668)
+		padding-top: 38px
+	.inner
+		+r(668)
+			padding: 0 16px
+	h3
+		color: $blue
+		margin-bottom: 37px
+		position: relative
+		font-size: 22px
+		letter-spacing: 0.02rem
+		+font-family($mont-bld)
+		+r(1080)
+			display: flex
+			align-items: center
+			min-height: 60px
+		+r(992)
+			align-items: baseline
+			min-height: auto
+		+sm
+			align-items: center
+			min-height: 60px
+			display: inline-flex
+		+r(668)
+			font-size: 18px
+			display: flex
+			min-height: auto
+		&:after
+			bottom: -19.5px
+			width: 100%
+			left: 0
+			content: ''
+			display: block
+			position: absolute
+			height: 4px
+			background-color: $blue
+	ul
+		padding-right: 8px
+		li
+			display: block
+			margin-bottom: 9px
+		li a
+			cursor: pointer
+			text-decoration: none
+			font-size: $text-reg //15px
+			color: $gray
+			display: flex
+			justify-content: space-between
+			align-items: center
+			flex-direction: row
+			svg
+				fill: $search-icon
+				width: 5px
+				height: 8px
+			&:hover
+				text-decoration: underline
+
+	&-page .preview
+		&__wrapper
+			padding-bottom: 60px
+	&-page .preview__wrapper
+		&-text
+			max-width: 470px
+			margin-bottom: 0
+	.items
+		display: flex
+		justify-content: space-between
+		flex-direction: column
+		max-width: 936px
+		border-bottom: 1px solid $gray-bdr
+		margin: 0 auto
+		padding-bottom: 60px
+		+r(668)
+			padding-bottom: 44.5px
+		&__field
+			font-size: 0
+			display: flex
+			justify-content: space-between
+			flex-direction: row
+			width: 100%
+			&:not(:last-child)
+				margin-bottom: 48px
+				+r(992)
+					margin-bottom: 35px
+			+r(992)
+				flex-direction: column
+				align-items: center
+			+sm
+				flex-direction: row
+				align-items: baseline
+			+r(668)
+				flex-direction: column
+		.item
+			max-width: 480px
+			width: 100%
+			display: inline-block
+			vertical-align: top
+			padding: 0 31px
+			+r(1200)
+				padding: 0 11px
+			+r(992)
+				max-width: 80%
+			+r(900)
+				max-width: 100%
+				padding: 0
+			+sm
+				padding: 0 11px
+			+r(668)
+				padding: 0
+				max-width: 100%
+			&:not(:last-child)
+				margin-left: -31px
+				+r(1200)
+					margin-left: -11px
+				+r(992)
+					margin-bottom: 35px
+				+r(900)
+					margin-left: 0
+				+sm
+					margin-left: -11px
+				+r(668)
+					margin-left: 0

@@ -1,0 +1,82 @@
+---
+title: Вакансии
+mainClasses: vacancies-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview" style="background-image: url('img/bg-preview-vacancies.jpg');">
+	<div class="preview__wrapper">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/career" class="breadcrumbs__link" itemprop="item" title="Карьера"><span itemprop="name">Карьера</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Вакансии">
+					<span itemprop="name">Вакансии</span>
+				</span>
+				<meta itemprop="position" content="3">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text preview_small">
+			<h1 class="title-lg">Вакансии</h1>
+			<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .opening -->
+<div class="opening">
+	<div class="inner">
+		{% for item in range(0, 2) %}
+		<div class="opening-wrapper">
+			<div class="opening__title">
+				<h2 class="title-semi-lg">Офис в Киеве</h2>
+				<div class="opening__right">
+					<div class="select-wrapper">
+						<select class="js-select">
+							{% for item in range(0, 4) %}
+							<option value="">Направление</option>
+							{% endfor %}
+						</select>
+					</div>
+					<div class="count">12 ВАКАНСИЙ</div>
+				</div>
+			</div>
+
+			<div class="items">
+				{% for item in range(0, 3) %}
+				<div class="item" itemscope itemtype="http://schema.org/JobPosting">
+					<meta itemprop="specialCommitments" content="VeteranCommit" />
+					<h3 class="title-semi-md" itemprop="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+					<p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+
+					<div class="item__controls">
+						<div class="item__controls-link">
+							<a href="#" title="ОПЫТ: ОТ 1 ГОДА">ОПЫТ: ОТ 1 ГОДА</a>
+							<a href="#" title="ПОЛНЫЙ ДЕНЬ"><span itemprop="employmentType">ПОЛНЫЙ ДЕНЬ</span></a>
+						</div>
+
+						<a href="#" class="btn btn_primary" title="ОТПРАВИТЬ РЕЗЮМЕ"><span>ОТПРАВИТЬ РЕЗЮМЕ</span></a>
+					</div>
+				</div>
+				{% endfor %}
+				<a href="#" class="link-justify" title="Смотреть все"><span>Смотреть все</span> {{mixins.icon('arrow')}}</a>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+<!-- END .opening -->
+{% include "blocks/_question.html" %}
+{% endblock%}

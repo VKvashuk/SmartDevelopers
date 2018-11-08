@@ -1,0 +1,103 @@
+.popup
+	position: absolute
+	left: 254px
+	background-color: rgba($gray, .85)
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	z-index: 9999
+	font-size: 0
+	overflow-y: auto
+	width: 100%
+	height: 100%
+	opacity: 0
+	visibility: hidden
+	transition: opacity .3s linear, visibility .3s linear
+	+sm
+		left: auto
+		top: 60px
+	&.is-open
+		visibility: visible
+		opacity: 1
+	&_form
+		+r(595)
+			width: 100%
+		.btn_success
+			+r(595)
+				margin: 0 auto
+				width: 250px
+			+r(481)
+				width: 100%
+		.popup
+			&__header
+				+r(595)
+					text-align: center
+				.btn-close
+					+r(595)
+						top: -14px
+						right: -14px
+				.title-semi-lg
+					+r(595)
+						font-size: 20px
+					&:after
+						+r(595)
+							left: 50%
+							transform: translateX(-50%)
+	&__content
+		font-size: 0
+		background-color: $search-bg
+		width: 340px
+		display: inline-block
+		min-height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		padding: 24px 24px 60px
+		+sm
+			left: auto
+			right: 0
+		+r(595)
+			width: 100%
+		.title-semi-lg
+			margin-bottom: 30px
+	&__header
+		position: relative
+		margin-bottom: 38px
+		.btn-close
+			position: absolute
+			top: -2px
+			right: -2px
+			display: block
+			left: auto
+		p
+			color: $gray
+			font-size: $text-sm //14px
+			line-height: 1.57
+			+font-family($noto-reg)
+
+
+
+
+.form
+	&__label
+		margin-bottom: 9px
+		margin-left: 24px
+		display: flex
+		order: -1
+		font-size: $text-reg //15px
+		color: $search-icon
+		line-height: 1.6
+		transition: color .24s ease-in-out
+	&__input
+		width: 100%
+	&__field
+		margin-bottom: 15px
+		display: flex
+		flex-direction: column
+	&__textarea
+		width: 100%
+		margin: 21px auto 30px
+	.btn_success
+		width: 100%
+

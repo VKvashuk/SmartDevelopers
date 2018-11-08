@@ -1,0 +1,109 @@
+---
+title: Front-end/Javascript development
+mainClasses: training-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview">
+	<div class="preview__wrapper bg-white">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs text-gray" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/career" class="breadcrumbs__link" itemprop="item" title="Карьера"><span itemprop="name">Карьера</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/trainings" class="breadcrumbs__link" itemprop="item" title="Тренинги"><span itemprop="name">Тренинги</span></a>
+				<meta itemprop="position" content="3">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Front-end/Javascript development">
+					<span itemprop="name">Front-end/Javascript development</span>
+				</span>
+				<meta itemprop="position" content="4">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+
+		<div class="preview__wrapper-text">
+			<h1 class="title-lg text-blue">Front-end/Javascript development</h1>
+			<ul class="list-vacancy">
+				<li>КПИ</li>
+				<li>18 марта в 14:00</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+<!-- BEGIN .vacancy -->
+<section class="vacancy">
+	<div class="inner">
+		<p><em>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </em></p>
+
+		<div class="field">
+			<h3>Основная информация</h3>
+			<ul class="list-circle">
+				<li><p><span>Место проведения:</span>  НТУУ "КПИ" им. І. Сикорского, ДУТ</p></li>
+				<li><p><span>Периодичность занятий:</span> 2-3 раза в неделю, после обеда</p></li>
+				<li><p><span>Пожелания к слушателям:</span> студенты старших курсов технических специальностей, аспиранты, выпускники</p></li>
+				<li><p><span>Количество слушателей:</span> 50 человек</p></li>
+				<li><p><span>Длительность тренинга:</span> 10 недель</p></li>
+			</ul>
+		</div>
+
+		<div class="field">
+			<h3>Необходимые знания и умения</h3>
+			<ul>
+				<li><p>Уровень аанлгийского языка не ниже Intermediate (B1)</p>{{mixins.icon('check')}}</li>
+				<li><p>Техническое образование</p>{{mixins.icon('check')}}</li>
+				<li><p>Аналитические способности и находчивость во время решения нестандартных задач</p>{{mixins.icon('check')}}</li>
+				<li><p>Базовые знания алгоритмов, понимание принципов ООП</p>{{mixins.icon('check')}}</li>
+				<li><p>Опыт разработки на любом языке</p>{{mixins.icon('check')}}</li>
+				<li><p>Базовые знания JavaScript, HTML/HTML5, CSS/CSS3</p>{{mixins.icon('check')}}</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<!-- END .vacancy -->
+
+<!-- BEGIN .register -->
+<section class="register">
+	<div class="inner">
+		<h2>Регистрация на тренинг</h2>
+
+		<form action="/" class="form">
+			<div class="form__row">
+				<div class="form__field">
+					<input id="userName" type="text" class="input form__input" required="" placeholder="Афанасий">
+					<label for="userName" class="form__label">Имя:</label>
+				</div>
+
+				<div class="form__field">
+					<input id="userLastName" type="text" class="input form__input" required="" placeholder="Афанасий">
+					<label for="userLastName" class="form__label">Фамилия:</label>
+				</div>
+
+				<div class="form__field">
+					<input id="userEmail" type="email" class="input form__input" required="" placeholder="mail@example.com">
+					<label for="userEmail" class="form__label">Email:</label>
+				</div>
+			</div>
+
+			<div class="form__field textarea_field">
+				<textarea  class="textarea" id="userLetter" rows="5" placeholder="Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus."></textarea>
+				<label for="userLetter" class="form__label">Вопрос или сообщение:</label>
+			</div>
+
+			<button class="btn btn_success btn_icon" type="submit"><span>ЗАРЕГИСТРИРОВАТЬСЯ</span>{{mixins.icon('send')}}</button>
+		</form>
+	</div>
+</section>
+<!-- END .register -->
+{% endblock%}

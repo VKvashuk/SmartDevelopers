@@ -1,0 +1,87 @@
+.preview
+	+cover
+	position: relative
+	.slick
+		&-slide
+			font-size: 16px
+			width: 100%
+			max-width: 160px
+			height: 60px
+			background-color: rgba($gray-bdr, .50)
+			+sm
+				max-width: 180px
+			+xs
+				max-width: 120px
+				height: 40px
+	&__slider
+		margin-top: 160px
+		+sm
+			margin-top: 184px
+			margin-left: 48px
+		+r(668)
+			margin-top: 95px
+			margin-left: 0
+		.item
+			display: block
+			width: 160px
+			height: 60px
+		.item img
+			max-width: 100%
+			height: 100%
+		.slick-slide:not(:first-child)
+			margin-left: 16px
+			+r(668)
+				margin-left: 8px
+	&__wrapper
+		padding: 0 0 64px 48px
+		position: relative
+		z-index: 5
+		+sm
+			padding-left: 48px
+		+r(481)
+			padding-left: 16px
+		&.bg-white
+			&:before
+				background-image: none
+				background-color: $white
+		&.bg-gray
+			&:before
+				background-color: $search-bg
+				background-image: none
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			z-index: -5
+			width: 100%
+			height: 100%
+			background-image: linear-gradient(rgba(255, 255, 255, 0), rgba($black, .50))
+			pointer-events: none
+		&-text
+			margin-bottom: 60px
+			padding-top: 136px
+			&.preview_small
+				max-width: 500px
+		.title-lg
+			margin-bottom: 31px
+			+r(668)
+				font-size: 24px
+				margin-bottom: 18px
+		.text-md
+			+r(668)
+				font-size: 15px
+	.list-vacancy
+		li
+			display: inline-block
+			vertical-align: top
+			font-size: 15px
+			&:not(:last-child)
+				margin-right: 30px
+				+r(668)
+					margin-bottom: 13px
+.home
+	.preview
+		&__wrapper-text
+			padding-top: 0

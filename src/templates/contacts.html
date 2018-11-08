@@ -1,0 +1,98 @@
+---
+title: Контакты
+mainClasses: contacts-page
+formBg: bg-gray
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- BEGIN .preview -->
+<section class="preview" style="background-image: url('img/bg-preview-contacts.jpg');">
+	<div class="preview__wrapper">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<a href="http://smartdevelopers.com.ua/index" class="breadcrumbs__link" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li itemprop="itemListElement" class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="item" class="breadcrumbs__link" title="Контакты">
+					<span itemprop="name">Контакты</span>
+				</span>
+				<meta itemprop="position" content="2">
+			</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+		<div class="preview__wrapper-text preview_small">
+			<h1 class="title-lg">Контакты</h1>
+			<p class="text-md">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+		</div>
+	</div>
+</section>
+<!-- END .preview -->
+
+
+<section class="contact">
+	<div class="inner">
+		<div class="contact__field">
+			<div class="col">
+				<div class="address">
+					<h2 class="title-semi-lg">Офис в Киеве</h2>
+					<address class="loc">
+						<p class="loc__name">Адрес</p>
+						<p class="loc__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo dolor.</p>
+						<p class="loc__date">Работаем с 9:00 до 18:00. СБ, ВС - выходной</p>
+					</address>
+
+					<div class="phone">
+						<p class="loc__name">ТЕЛЕФОН И ПОЧТА</p>
+						<a href="tel:380999999999" title="+38 099 999-99-99">+38 099 999-99-99</a>
+						<a href="mailto:kiev@smartdevelopers.eu" title="kiev@smartdevelopers.eu">kiev@smartdevelopers.eu</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="map">
+					<a type="hidden" itemprop="url" href="#" target="iframeMap"></a>
+					<span itemscope itemprop="hasMap" itemtype="http://schema.org/Map">
+						<span>Карта</span>
+						<link itemprop="mapType" href="http://schema.org/VenueMap" />
+					</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="contact__field">
+			<div class="col">
+				<div class="address">
+					<h2 class="title-semi-lg">Офис в Киеве</h2>
+					<address class="loc">
+						<p class="loc__name">Адрес</p>
+						<p class="loc__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo dolor.</p>
+						<p class="loc__date">Работаем с 9:00 до 18:00. СБ, ВС - выходной</p>
+					</address>
+
+					<div class="phone">
+						<p class="loc__name">ТЕЛЕФОН И ПОЧТА</p>
+						<a href="tel:380999999999" title="+38 099 999-99-99">+38 099 999-99-99</a>
+						<a href="mailto:kiev@smartdevelopers.eu" title="kiev@smartdevelopers.eu">kiev@smartdevelopers.eu</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="map">
+					<a type="hidden" itemprop="url" href="#" target="iframeMap"></a>
+					<span itemscope itemprop="hasMap" itemtype="http://schema.org/Map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10179.90656171257!2d30.44835105!3d50.366990050000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smap+iframe!5e0!3m2!1sru!2sua!4v1525852628501" allowfullscreen id="iframeMap"></iframe>
+						<link itemprop="mapType" href="http://schema.org/VenueMap" />
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% include "blocks/_question.html" %}
+{% endblock %}

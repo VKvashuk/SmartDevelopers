@@ -1,0 +1,142 @@
+.news
+	font-size: 0
+	padding: 46px 0 92px
+	background-color: $search-bg
+	&__slider
+		padding-left: 48px
+		+r(668)
+			padding: 0 8px
+		.slick
+			&-list
+				position: relative
+				+r(668)
+					width: 100%
+					max-width: 360px
+					margin: 0 auto
+				&:after
+					content: ""
+					position: absolute
+					right: 0
+					width: 48px
+					pointer-events: none
+					height: 100%
+					top: 0
+					background-image: linear-gradient(to left, $white, rgba($white, 0))
+					+r(668)
+						display: none
+			&-slide
+				padding-right: 16px
+				+r(668)
+					padding-right: 0
+			&-next
+				background-color: transparent
+				width: 44px
+				height: 44px
+				border-radius: 50px
+				position: relative
+				float: right
+				margin-top: 25px
+				margin-right: 48px
+				font-size: 0
+				overflow: hidden
+				border: 1px solid $gray-bdr
+				+trs
+				cursor: pointer
+				&:hover
+					background-color: $white
+					border-color: darken($gray, 10)
+				+r(481)
+					margin-right: 17px
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					top: 50%
+					left: 50%
+					width: 16px
+					height: 21.11px
+					background-size: 100% 100%
+					background-repeat: no-repeat
+					background-position: center center
+					transform: translate(-50%, -50%)
+					background-image: url('../img/arrow-gray.svg')
+	&__title
+		+clr
+		+r(992)
+			text-align: center
+		.title-semi-lg
+			display: inline-block
+			+r(668)
+				font-size: 20px
+				margin-bottom: 27px
+		.btn_ghost
+			float: right
+			font-size: $text-xs // 13px
+			max-width: 162px
+			padding: 12px 0
+			&:hover
+				background-color: $white
+				color: darken($gray, 10)
+			+r(992)
+				float: none
+				margin: 0 auto 20px
+			+r(668)
+				display: none
+	.item
+		display: inline-block
+		max-width: 360px
+		width: 100%
+		border: 1px solid $gray-bdr
+		overflow: hidden
+		box-shadow: 0 1px 3px rgba($black , .16)
+		border-radius: 8px
+		background-color: $white
+		margin-bottom: 3px
+		+r(321)
+			max-width: 302px
+		&:not(:last-child)
+			margin-right: 16px
+		&__image
+			+cover
+			height: 225px
+		&__content
+			font-size: 0
+			padding: 17px 16px 20px 16px
+		.text-shaped
+			color: $white
+			padding: 6px 20px 7px 16px
+			letter-spacing: 0.020em
+			background-color: rgba($black, .65)
+			display: inline-block
+			margin-top: 16px
+			margin-left: 16px
+			&.shape-green
+				background-color: $green
+				margin-top: 0
+				margin-left: 0
+		&__bottom
+			display: flex
+			flex-direction: row
+			padding-top: 16.5px
+			border-top: 1px solid $gray-bdr
+			justify-content: space-between
+		&__date
+			line-height: 1.6
+			font-size: $text-reg //15px
+			display: inline-block
+		&__link
+			text-decoration: none
+			color: $blue
+			font-size: $text-reg //15px
+			line-height: 1.6
+			display: inline-block
+			+font-family($noto-bld)
+			&:hover
+				text-decoration: underline
+		&__text
+			color: $gray
+			font-size: $text-md //16px
+			line-height: 1.375
+			padding-right: 57px
+			padding-bottom: 19.5px
+			+font-family($mont-bld)

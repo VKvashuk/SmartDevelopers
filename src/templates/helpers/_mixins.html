@@ -1,0 +1,18 @@
+{% macro icon(name, modClass) %}
+<svg class="icon icon-{{name}}">
+	<use xlink:href="img/sprite.svg#icon-{{name}}"></use>
+</svg>
+{% endmacro %}
+
+{% macro imgSvg(name, modClass) %}
+<img src="img/{{name}}.svg" alt="icon {{name}}" class="{{modClass}}">
+{% endmacro %}
+
+{% macro sidebar(side) %}
+	{% if side === 'menuCabinet' %}
+		{% include "components/_menuCabinet.html" %}
+
+	{% else %}
+		{% include "components/_menu.html" %}
+	{% endif %}
+{% endmacro %}

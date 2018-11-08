@@ -1,0 +1,69 @@
+.main-leadership
+	.preview
+		background-position: left bottom
+
+	.preview__wrapper
+		padding-bottom: 35px
+		+r(1279)
+			padding-left: 48px
+		+r(766)
+			padding-left: 16px;
+		.text-md
+			font-size: 15px
+	.preview__wrapper-text
+		margin-bottom: 15px
+
+.leadership
+	padding-top: 54px
+	position: relative
+	+r(766)
+		padding-top: 41px
+	&:before
+			content: ''
+			position: absolute
+			width: auto
+			height: 1px
+			bottom: 0
+			left: 0
+			right: 0
+			border-bottom: 1px solid #e9ecef
+			margin: 0 48px
+			box-sizing: border-box
+			+r(766)
+				margin: 0 16px
+	.inner
+		+r(766)
+			padding: 0 16px
+	&-item
+		display: flex
+		justify-content: space-between
+		margin: 0 auto
+		margin-bottom: 66px
+		max-width: 865px
+		+r(766)
+			margin-bottom: 32px
+		&.leadership-item_another
+			.leadership-img
+				order: 2
+			.leadership-text
+				padding-left: 0px
+				padding-right: 32px
+				+r(605)
+					padding-right: 0px
+	&-img
+		background: $search-bdr
+		width: 360px
+		height: 460px
+		flex-shrink: 0
+		+r(1100)
+			width: 260px
+			height: 332px
+		+r(880)
+			width: 160px
+			height: 205px
+		+r(769)
+			width: 260px
+			height: 332px
+		+r(605)
+			display: none
+

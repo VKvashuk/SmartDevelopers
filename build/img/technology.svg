@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 64">
+    <defs>
+        <style>
+            .a,.b,.c,.d{fill:none;stroke-miterlimit:10;stroke-width:2px}.a{stroke:#2f9e44}.b,.c{stroke:#222829}.b{stroke-linejoin:round}.d{stroke:#1c7ed6}
+        </style>
+    </defs>
+    <path class="a" d="M31 9h6v5"/>
+    <path class="b" d="M41 52h3"/>
+    <path class="b" d="M21 7V1"/>
+    <path class="c" d="M0 17h11"/>
+    <path class="c" d="M27 15h4v4h-4z"/>
+    <path class="c" d="M27 23h4v4h-4z"/>
+    <path class="c" d="M19 7h4v4h-4z"/>
+    <path class="c" d="M19 23h4v4h-4z"/>
+    <path class="d" d="M11 7h4v4h-4z"/>
+    <path class="c" d="M11 15h4v4h-4z"/>
+    <path class="c" d="M11 23h4v4h-4z"/>
+    <path class="c" d="M27 7h4v4h-4z"/>
+    <path class="c" d="M29 27v6h4v4h15"/>
+    <path class="c" d="M48 21h-2"/>
+    <path class="c" d="M31 25h6v-8h-6"/>
+    <path class="c" d="M40 9h2"/>
+    <path class="a" d="M40 13h2"/>
+    <path class="a" d="M44 13h2"/>
+    <path class="a" d="M40 17h2"/>
+    <path class="c" d="M21 27v12h4v25"/>
+    <path class="b" d="M29 7V1"/>
+    <path class="c" d="M11 25H5V9h6"/>
+    <path class="b" d="M19 64V49l-6-12V27"/>
+    <path class="c" d="M29 36v2"/>
+    <path class="a" d="M25 30v2"/>
+    <path class="a" d="M25 34v2"/>
+    <path class="c" d="M29 40v2"/>
+    <path class="c" d="M32 41h2"/>
+    <path class="c" d="M44 21h-7"/>
+    <path class="d" d="M19 15h4v4h-4z"/>
+    <path class="c" d="M25 45h4v19"/>
+    <path class="b" d="M16 1h16a21 21 0 0 1 21 21l6 13v2h-6v9a6.018 6.018 0 0 1-6 6h-6v12"/>
+</svg>
